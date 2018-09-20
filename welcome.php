@@ -4,11 +4,11 @@
         <title>Welcome to Pulut-Pukyutan!</title>
         <?php include_once 'helpers/gen-inc.php' ?>
     </head>
-    <body style="background-image: url('resources/images/e-waste-bg.jpg')">
+    <body style="background-image: url('<?php echo $path['wasteBG'] ?>')">
         <div class="fluid container">
             <div style="display: table-row; height: 100vh; width: 100vw">
                 <div class="items" style="display: table-cell; width: 100vw; vertical-align: middle !important; text-align: center">
-                    <img id="loadimg" src="resources/images/pulut-logo-colored.png" style="width: 100px;"/>
+                    <img id="loadimg" src="<?php echo $path['coloredLogo'] ?>" style="width: 100px;"/>
                     <br /><br />
                     <font style="color: white; font-size: 30px">Welcome to Pulut-Pukyutan</font>
                     <br /><br />
