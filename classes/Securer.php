@@ -11,7 +11,7 @@
                 $this->password = '';
                 $this->destination = 'mysql:host=localhost;dbname=pulutpukyutan';
                 $this->pdo = new PDO($this->destination, $this->username, $this->password);
-            }
+        }
 
             public function checkIfCredentialSet() {
                 $qry1 = $this->pdo->query("SELECT prefValue FROM settings WHERE prefName = 'username'");
@@ -36,7 +36,7 @@
                     return false;
                 }
             }
-            
+
             public function checkIfAllSet() {
                 if ($this->checkIfCredentialSet() && $this->checkIfInformationSet()) {
                     return true;

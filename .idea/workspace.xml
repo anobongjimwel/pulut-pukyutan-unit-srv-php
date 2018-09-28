@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/classes/InfoManager.php" line="3" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="8ca1ef50-1bfd-4e8f-a7f1-0d18fe3664f7" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/classes/InfoManager.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/classes/Securer.php" afterPath="$PROJECT_DIR$/classes/Securer.php" />
+      <change beforePath="$PROJECT_DIR$/classes/SystemInfo.php" afterPath="$PROJECT_DIR$/classes/SystemInfo.php" />
+      <change beforePath="$PROJECT_DIR$/setup-creds.php" afterPath="$PROJECT_DIR$/setup-creds.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -45,18 +50,74 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Securer.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Securer.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/Securer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="603">
-              <caret line="38" column="12" lean-forward="true" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+            <state relative-caret-position="656">
+              <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
               <folding>
-                <marker date="1537465550072" expanded="true" signature="573:580" ph="SELECT * FRO... " />
-                <marker date="1537465550072" expanded="true" signature="573:631" ph="SELECT prefV... settings" />
-                <marker date="1537465550072" expanded="true" signature="678:736" ph="SELECT prefV... settings" />
-                <marker date="1537465550072" expanded="true" signature="1166:1224" ph="SELECT prefV... settings" />
-                <marker date="1537465550072" expanded="true" signature="1271:1329" ph="SELECT prefV... settings" />
+                <marker date="1537485210847" expanded="true" signature="569:576" ph="SELECT * FRO... " />
+                <marker date="1537485210847" expanded="true" signature="569:627" ph="SELECT prefV... settings" />
+                <marker date="1537485210847" expanded="true" signature="674:732" ph="SELECT prefV... settings" />
+                <marker date="1537485210847" expanded="true" signature="1162:1220" ph="SELECT prefV... settings" />
+                <marker date="1537485210847" expanded="true" signature="1267:1325" ph="SELECT prefV... settings" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="InfoManager.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/InfoManager.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="441">
+              <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+              <folding>
+                <marker date="1538144939426" expanded="true" signature="603:650" ph="UPDATE wasteObjects... " />
+                <marker date="1538144939426" expanded="true" signature="603:678" ph="UPDATE wasteObjects... " />
+                <marker date="1538144939426" expanded="true" signature="735:772" ph="UPDATE wasteObjects... " />
+                <marker date="1538144939426" expanded="true" signature="735:821" ph="UPDATE wasteObjects... " />
+                <marker date="1538144939426" expanded="true" signature="735:849" ph="UPDATE wasteObjects... " />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="setup-creds.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/setup-creds.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="731">
+              <caret line="39" column="39" lean-forward="false" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrashThrower.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/TrashThrower.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TrashMonitor.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/TrashMonitor.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SystemInfo.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/SystemInfo.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2480">
+              <caret line="155" column="38" lean-forward="true" selection-start-line="155" selection-start-column="38" selection-end-line="155" selection-end-column="38" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -83,8 +144,8 @@
       <file leaf-file-name="dbcon.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/helpers/dbcon.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="61" />
+            <state relative-caret-position="100">
+              <caret line="5" column="54" lean-forward="true" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
               <folding />
             </state>
           </provider>
@@ -115,13 +176,15 @@
         <option value="$PROJECT_DIR$/.idea/Pulut Pukyutan Gaia Server.iml" />
         <option value="$PROJECT_DIR$/manifest.json" />
         <option value="$PROJECT_DIR$/welcome.php" />
-        <option value="$PROJECT_DIR$/setup-creds.php" />
         <option value="$PROJECT_DIR$/setup-identity.php" />
         <option value="$PROJECT_DIR$/setup-complete.php" />
         <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/helpers/autoload.php" />
         <option value="$PROJECT_DIR$/classes/trashMonitor.php" />
+        <option value="$PROJECT_DIR$/classes/SystemInfo.php" />
         <option value="$PROJECT_DIR$/classes/Securer.php" />
+        <option value="$PROJECT_DIR$/classes/InfoManager.php" />
+        <option value="$PROJECT_DIR$/setup-creds.php" />
       </list>
     </option>
   </component>
@@ -133,8 +196,8 @@
   </component>
   <component name="PhpWorkspaceProjectConfiguration" backward_compatibility_performed="true" />
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-154" />
-    <option name="y" value="-14" />
+    <option name="x" value="37" />
+    <option name="y" value="-8" />
     <option name="width" value="1920" />
     <option name="height" value="992" />
   </component>
@@ -156,8 +219,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -184,13 +245,15 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
   </component>
   <component name="RecentsManager">
@@ -236,12 +299,14 @@
       <workItem from="1537446026155" duration="31000" />
       <workItem from="1537446059587" duration="15000" />
       <workItem from="1537446077467" duration="7145000" />
-      <workItem from="1537462706851" duration="1427000" />
+      <workItem from="1537462706851" duration="1595000" />
+      <workItem from="1537482749789" duration="4355000" />
+      <workItem from="1538142164717" duration="3315000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11541000" />
+    <option name="totallyTimeSpent" value="19379000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -251,13 +316,13 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14010416" sideWeight="0.57889235" order="4" side_tool="true" content_ui="tabs" x="482" y="32" width="633" height="957" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14010416" sideWeight="0.5882968" order="4" side_tool="true" content_ui="tabs" x="482" y="32" width="633" height="957" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14010416" sideWeight="0.42110762" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14010416" sideWeight="0.41170323" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -283,16 +348,97 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/helpers/dbcon.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/InfoManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="128">
+          <caret line="8" column="13" lean-forward="true" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <marker date="1538144939426" expanded="true" signature="603:650" ph="UPDATE wasteObjects... " />
+            <marker date="1538144939426" expanded="true" signature="603:678" ph="UPDATE wasteObjects... " />
+            <marker date="1538144939426" expanded="true" signature="735:772" ph="UPDATE wasteObjects... " />
+            <marker date="1538144939426" expanded="true" signature="735:821" ph="UPDATE wasteObjects... " />
+            <marker date="1538144939426" expanded="true" signature="735:849" ph="UPDATE wasteObjects... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/classes/Securer.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <marker date="1537465550072" expanded="true" signature="573:580" ph="SELECT * FRO... " />
-            <marker date="1537465550072" expanded="true" signature="573:631" ph="SELECT prefV... settings" />
-            <marker date="1537465550072" expanded="true" signature="678:736" ph="SELECT prefV... settings" />
-            <marker date="1537465550072" expanded="true" signature="1166:1224" ph="SELECT prefV... settings" />
-            <marker date="1537465550072" expanded="true" signature="1271:1329" ph="SELECT prefV... settings" />
+            <marker date="1537485210847" expanded="true" signature="569:576" ph="SELECT * FRO... " />
+            <marker date="1537485210847" expanded="true" signature="569:627" ph="SELECT prefV... settings" />
+            <marker date="1537485210847" expanded="true" signature="674:732" ph="SELECT prefV... settings" />
+            <marker date="1537485210847" expanded="true" signature="1162:1220" ph="SELECT prefV... settings" />
+            <marker date="1537485210847" expanded="true" signature="1267:1325" ph="SELECT prefV... settings" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/SystemInfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3040">
+          <caret line="190" column="1" lean-forward="false" selection-start-line="190" selection-start-column="1" selection-end-line="190" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/InfoManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="0" lean-forward="false" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding>
+            <marker date="1538144939426" expanded="true" signature="603:650" ph="UPDATE wasteObjects... " />
+            <marker date="1538144939426" expanded="true" signature="603:678" ph="UPDATE wasteObjects... " />
+            <marker date="1538144939426" expanded="true" signature="735:772" ph="UPDATE wasteObjects... " />
+            <marker date="1538144939426" expanded="true" signature="735:821" ph="UPDATE wasteObjects... " />
+            <marker date="1538144939426" expanded="true" signature="735:849" ph="UPDATE wasteObjects... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/336b5999-efa0-49ed-b1ed-2b73b8ebb378/console.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="das://table:/c6a36642/336b5999-efa0-49ed-b1ed-2b73b8ebb378/pulutpukyutan.settings">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/helpers/dbcon.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Securer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1537485210847" expanded="true" signature="569:576" ph="SELECT * FRO... " />
+            <marker date="1537485210847" expanded="true" signature="569:627" ph="SELECT prefV... settings" />
+            <marker date="1537485210847" expanded="true" signature="674:732" ph="SELECT prefV... settings" />
+            <marker date="1537485210847" expanded="true" signature="1162:1220" ph="SELECT prefV... settings" />
+            <marker date="1537485210847" expanded="true" signature="1267:1325" ph="SELECT prefV... settings" />
           </folding>
         </state>
       </provider>
@@ -394,13 +540,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/setup-creds.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="4" column="39" lean-forward="false" selection-start-line="4" selection-start-column="39" selection-end-line="4" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/helpers/autoload.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -412,28 +551,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="860">
           <caret line="32" column="7" lean-forward="false" selection-start-line="32" selection-start-column="7" selection-end-line="32" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/TrashMonitor.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/TrashThrower.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/helpers/dbcon.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="3" column="20" lean-forward="false" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="61" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -452,17 +569,71 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/helpers/dbcon.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="5" column="54" lean-forward="true" selection-start-line="5" selection-start-column="54" selection-end-line="5" selection-end-column="54" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/SystemInfo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2480">
+          <caret line="155" column="38" lean-forward="true" selection-start-line="155" selection-start-column="38" selection-end-line="155" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/TrashMonitor.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/TrashThrower.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/classes/Securer.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="603">
-          <caret line="38" column="12" lean-forward="true" selection-start-line="38" selection-start-column="12" selection-end-line="38" selection-end-column="12" />
+        <state relative-caret-position="656">
+          <caret line="41" column="32" lean-forward="true" selection-start-line="41" selection-start-column="32" selection-end-line="41" selection-end-column="32" />
           <folding>
-            <marker date="1537465550072" expanded="true" signature="573:580" ph="SELECT * FRO... " />
-            <marker date="1537465550072" expanded="true" signature="573:631" ph="SELECT prefV... settings" />
-            <marker date="1537465550072" expanded="true" signature="678:736" ph="SELECT prefV... settings" />
-            <marker date="1537465550072" expanded="true" signature="1166:1224" ph="SELECT prefV... settings" />
-            <marker date="1537465550072" expanded="true" signature="1271:1329" ph="SELECT prefV... settings" />
+            <marker date="1537485210847" expanded="true" signature="569:576" ph="SELECT * FRO... " />
+            <marker date="1537485210847" expanded="true" signature="569:627" ph="SELECT prefV... settings" />
+            <marker date="1537485210847" expanded="true" signature="674:732" ph="SELECT prefV... settings" />
+            <marker date="1537485210847" expanded="true" signature="1162:1220" ph="SELECT prefV... settings" />
+            <marker date="1537485210847" expanded="true" signature="1267:1325" ph="SELECT prefV... settings" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/InfoManager.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="21" column="33" lean-forward="false" selection-start-line="21" selection-start-column="33" selection-end-line="21" selection-end-column="33" />
+          <folding>
+            <marker date="1538144939426" expanded="true" signature="603:650" ph="UPDATE wasteObjects... " />
+            <marker date="1538144939426" expanded="true" signature="603:678" ph="UPDATE wasteObjects... " />
+            <marker date="1538144939426" expanded="true" signature="735:772" ph="UPDATE wasteObjects... " />
+            <marker date="1538144939426" expanded="true" signature="735:821" ph="UPDATE wasteObjects... " />
+            <marker date="1538144939426" expanded="true" signature="735:849" ph="UPDATE wasteObjects... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/setup-creds.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="39" column="39" lean-forward="false" selection-start-line="39" selection-start-column="39" selection-end-line="39" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
