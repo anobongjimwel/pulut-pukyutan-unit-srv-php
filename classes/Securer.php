@@ -53,4 +53,6 @@
                 }
             }
         }
+
+        $secure = new Securer();
     }

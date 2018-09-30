@@ -23,4 +23,6 @@
                 }
             }
         }
+
+        $infoMgr = new InfoManager();
     }
