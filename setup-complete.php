@@ -1,4 +1,5 @@
 <?php
+include_once "classes/Securer.php";
 use pulut\Securer;
 if ($secure->checkIfLoggedIn()) {
     header("Location: dashboard.php");
