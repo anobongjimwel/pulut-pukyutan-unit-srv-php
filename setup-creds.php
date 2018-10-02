@@ -1,13 +1,14 @@
 <?php
-    use pulut\Securer;
+    include_once "classes/Securer.php";
+    $secure = new pulut\Securer();
     if ($secure->checkIfLoggedIn()) {
         header("Location: dashboard.php");
     } else {
-        if ($secure->checkIfCredentialSet()) {
-            header("Location: setup-identity.php");
-        } else if ($secure->checkIfInformationSet()) {
-            header("Location: setup-complete.php");
-        }
+       if ($secure->checkIfAllSet()) {
+           header("Location: setup-complete.php");
+       } else if ($secure->checkIfCredentialSet()) {
+           header("Location: setup-identity.php");
+       }
     }
 ?>
 <!DOCTYPE html>
