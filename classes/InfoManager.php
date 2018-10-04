@@ -14,8 +14,8 @@
             }
 
             public function updateCredentials($username, $password) {
-                $changeUsername = $this->pdo->query("UPDATE wasteObjects SET prefValue = '$username' WHERE prefName = 'username'");
-                $changePassword = $this->pdo->query("UPDATE wasteObjects SET prefValue = '".password_hash("$password", PASSWORD_DEFAULT)."' WHERE prefname = 'password'");
+                $changeUsername = $this->pdo->query("UPDATE settings SET prefValue = '$username' WHERE prefName = 'username'");
+                $changePassword = $this->pdo->query("UPDATE settings SET prefValue = '".password_hash("$password", PASSWORD_DEFAULT)."' WHERE prefName = 'password'");
                 if ($changePassword->rowCount() > 0 && $changeUsername->rowCount() > 0) {
                     return "GOOD";
                 } else {
