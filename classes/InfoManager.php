@@ -22,6 +22,16 @@
                     return "BAD";
                 }
             }
+
+            public function updateIdentity($fullname, $subtitle) {
+                $changeFullName = $this->pdo->query("UPDATE settings SET prefValue = '$fullname' WHERE prefName = 'fullname'");
+                $changeSubtitle = $this->pdo->query("UPDATE settings SET prefValue = '$subtitle' WHERE prefName = 'subtitle'");
+                if ($changeSubtitle->rowCount() > 0 && $changeFullName->rowCount() > 0) {
+                    return "GOOD";
+                } else {
+                    return "BAD";
+                }
+            }
         }
 
         $infoMgr = new InfoManager();
