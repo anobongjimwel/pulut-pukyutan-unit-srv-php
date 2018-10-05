@@ -1,10 +1,14 @@
 <div class="ui sticky inverted menu" style="position: sticky; top: 0; padding: 0 15px">
-    <div class="item computerOnly">
-        <img src="<?php echo $path['whiteLogo'] ?>">
-    </div>
-    <div class="item phoneOnly aligned center" id="left-side-dropdown-phone">
-        <img src="<?php echo $path['whiteLogo'] ?>">
-    </div>
+    <a href="dashboard.php">
+        <div class="item computerOnly">
+            <img src="<?php echo $path['whiteLogo'] ?>">
+        </div>
+    </a>
+    <a href="dashboard.php">
+        <div class="item phoneOnly aligned center" id="left-side-dropdown-phone">
+            <img src="<?php echo $path['whiteLogo'] ?>">
+        </div>
+    </a>
     <a class="browse item computerOnly" id="left-side-dropdown">
         Pulot-Pukyutan: Unit SN-48X53Z
         <i class="dropdown icon"></i>
