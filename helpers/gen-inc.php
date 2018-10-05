@@ -25,7 +25,7 @@
 
     @media screen and (min-width: 800px) {
         .container.fluid {
-            padding: 0 10px;
+            padding: 10px 20px;
         }
 
         .phoneOnly {
