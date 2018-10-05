@@ -101,7 +101,7 @@
                                         data.setValue(0, 1, this.responseText);
                                     }
                                 };
-                                xmlHttp.open("GET","modules/memUsage.php", true);
+                                xmlHttp.open("GET","async/memUsage.php", true);
                                 xmlHttp.send();
 
                                 var xmlHttp2 = new XMLHttpRequest();
@@ -110,7 +110,7 @@
                                         data.setValue(1, 1, this.responseText);
                                     }
                                 };
-                                xmlHttp2.open("GET","modules/CPU.php", true);
+                                xmlHttp2.open("GET","async/CPU.php", true);
                                 xmlHttp2.send();
 
                                 chart.draw(data, options);
