@@ -1,5 +1,5 @@
 <?php include_once "components/config.php"?>
-<meta http-equiv="U-AX-Compatible" content="IE=edge" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="stylesheet" href="components/semantics/semantic.css" />
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
