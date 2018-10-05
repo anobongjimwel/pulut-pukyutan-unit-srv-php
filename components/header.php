@@ -26,7 +26,7 @@
             <div class="ui inverted link list">
                 <a class="item">Operation Status</a>
                 <a class="item">Statistics</a>
-                <a class="item">Schedules</a>
+                <a class="item" href='schedules.php'>Schedules</a>
                 <a class="item">Unit Details</a>
             </div>
         </div>
