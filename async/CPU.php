@@ -1,7 +1,7 @@
 <?php
 require_once "../classes/SystemInfo.php";
-$ram = new SystemInfo();
+$sysInfo = new \Pulut\SystemInfo();
 
-echo number_format(abs($ram->getCpuLoadPercentage()),3);
+echo number_format(abs($sysInfo->getCpuLoadPercentage()),3);
 
 ?>
