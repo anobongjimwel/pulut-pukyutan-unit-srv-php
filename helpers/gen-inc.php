@@ -38,7 +38,7 @@
     }
 
     div.container.fluid {
-        background: url('resources/images/e-waste-bg.jpg') repeat-x bottom;
+        background: url('<?php echo $path['wasteBG']?>') repeat-x bottom;
         background-size: 100%;
         min-height: 100vh
     }
@@ -49,5 +49,9 @@
 
     ::-webkit-scrollbar{
         display: none;
+    }
+
+    .ui.inverted.menu a.item:hover{
+        background-color: rgba(0, 0, 0, 0) !important;
     }
 </style>

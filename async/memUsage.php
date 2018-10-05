@@ -1,6 +1,6 @@
 <?php
 require_once "../classes/SystemInfo.php";
-$ram = new SystemInfo();
+$sysInfo = new \Pulut\SystemInfo();
 
-echo round(abs($ram->getRamFree() / $ram->getRamTotal() * 100),2);
+echo round(abs($sysInfo->getRamFree() / $sysInfo->getRamTotal() * 100),2);
 
