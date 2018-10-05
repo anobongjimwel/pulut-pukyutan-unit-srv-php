@@ -18,16 +18,16 @@
                         <font style="font-size: 16px; position: relative; left: -85px;">Username:</font>
                         <br />
                         <div class="ui icon input" style="width: 250px;">
-                            <input type="text" placeholder="Username">
+                            <input type="text" placeholder="Username" id="username">
                         </div>
                         <br /><br />
                         <font style="font-size: 16px; position: relative; left: -88px;">Password:</font>
                         <br />
                         <div class="ui icon input" style="width: 250px;">
-                            <input type="password" placeholder="Password">
+                            <input type="password" placeholder="Password" id="password">
                         </div>
                         <br /><br /><br /><br />
-                        <button type="reset" class="ui red button">Reset</button>
+                        <button id="btn-reset" type="reset" onclick="credReset()" class="ui red button">Reset</button>
                         <button id="btn-setup" class="ui green button" onclick="triggerLoading()">Submit</button>
                         <br /><br />
                     </div>
@@ -35,12 +35,43 @@
             </div>
         </div>
         <script>
-            function triggerLoading(){
+            function triggerLoading() {
+                var username = document.getElementById('username');
+                var password = document.getElementById('password');
                 var loadimg = document.getElementById('loadimg');
+                var btnsetup = document.getElementById('btn-setup');
+                var btnreset = document.getElementById('btn-reset');
                 loadimg.src = '<?php echo $path['loadRotate1']?>';
-                setTimeout(function(){
-                    location.href = 'setup-complete.php';
-                }, 5000);
+                btnsetup.setAttribute('disabled', 'true');
+                btnreset.setAttribute('disabled', 'true');
+                if (username.value == '' && password.value == '') {
+                    alert('Please fill in the credentials needed!');
+                    loadimg.src = '<?php echo $path['coloredLogo']?>';
+                } else {
+                    setTimeout(function () {
+                        var XMLhttp = new XMLHttpRequest();
+                        XMLhttp.onreadystatechange = function () {
+                            if (this.readyState == 4 && this.status == 200) {
+                                if (this.response == 'GOOD') {
+                                    location.href = 'dashboard.php';
+                                } else {
+                                    loadimg.src = '<?php echo $path['coloredLogo']?>';
+                                    location.href='dashboard.php';
+                                }
+                            }
+                        };
+                        XMLhttp.open('POST', 'async/logger.php', true);
+                        XMLhttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                        XMLhttp.send('u=' + username.value + '&p=' + password.value);
+                    }, 5000);
+                }
+            }
+
+            function credReset() {
+                var username = document.getElementById('username');
+                var password = document.getElementById('password');
+                username.value = '';
+                password.value = '';
             }
         </script>
     </body>

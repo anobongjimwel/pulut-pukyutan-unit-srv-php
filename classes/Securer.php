@@ -52,5 +52,17 @@
                     return false;
                 }
             }
+
+            public function checkCredentials($username, $password) {
+                $qry1 = $this->pdo->query("SELECT prefValue FROM settings WHERE prefName = 'username'");
+                $qry2 = $this->pdo->query("SELECT prefValue FROM settings WHERE prefName = 'password'");
+                $unitUsername = $qry1->fetch(PDO::FETCH_ASSOC)['prefValue'];
+                $unitPassword = $qry2->fetch(PDO::FETCH_ASSOC)['prefValue'];
+                if ($unitUsername == $username && password_hash($password, $unitPassword)) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
         }
     }
