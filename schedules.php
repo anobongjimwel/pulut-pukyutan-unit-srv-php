@@ -83,7 +83,7 @@
                                 foreach ($scheduler->getTwoWeekLongDates(date('Y-m-d')) as $date) {
                                     if ($scheduler->compareDate($date)) {
                                         echo "<div class=\"ui stackable grid\">";
-                                            echo "<div class=\"one wide column\" style=\"color: white\">";
+                                            echo "<div class=\"computerOnly one wide column\" style=\"color: white\">";
                                             echo "<font style=\"font-size: 23px;\">".$scheduler->returnShortMonth($date)."</font>";
                                             echo "<br /><font style=\"font-size: 40px;\">".$scheduler->returnDay($date)."</font>";
                                             echo "</div>";
@@ -93,15 +93,16 @@
                                             echo "</div>";
                                             echo "<div class=\"phoneOnly column\" style=\"overflow-x: hidden; color: white\">";
                                             echo "<br />";
-                                            echo "<font style=\"font-size: 20px; line-height: 1.2\">".$scheduler->returnLongDateFmt($date)."</font>";
+                                            echo "<font style=\"font-size: 20px;\"><font style='font-size: 40px'>".$scheduler->returnShortMonth($date)." ".$scheduler->returnDay($date)."</font><br /> ".$scheduler->returnLongDateFmt($date)."</font>";
                                             echo "</div>";
                                         echo "</div>";
                                     }
                                 }
                             ?>
+                        </div>
                     </div>
-                </div>
+                <?php include_once "components/endScript.php" ?>
+            </div>
         </div>
-        <?php include_once "components/endScript.php" ?>
     </body>
 </html>
