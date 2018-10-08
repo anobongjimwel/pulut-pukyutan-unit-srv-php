@@ -9,6 +9,11 @@
             $scheduler = new \pulut\Scheduler();
             $log = new \pulut\Logger();
         ?>
+        <style>
+            .ui.card {
+                min-height: 220px !important;
+            }
+        </style>
         <script>
             function submitAddQuery() {
                 var objectName = document.getElementById('objectName-AdderWidget');
@@ -203,7 +208,39 @@
                         <div class="header">Content Estimates</div>
                         <div class="meta">Waste Containers</div>
                         <div class="description">
-                            <div id="chart_div" style="width: 400px; height: 120px;"></div>
+                            <div class="ui list">
+                                <div class="item">
+                                    <div class="right floated content">
+                                        99 Objs.
+                                    </div>
+                                    <i class="trash icon"></i>
+                                    <div class="content">
+                                        Biodegradable
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui list">
+                                <div class="item">
+                                    <div class="right floated content">
+                                        102 Objects
+                                    </div>
+                                    <i class="trash icon"></i>
+                                    <div class="content">
+                                        Non-Biodegradable
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ui list">
+                                <div class="item">
+                                    <div class="right floated content">
+                                        15
+                                    </div>
+                                    <i class="trash icon"></i>
+                                    <div class="content">
+                                        Unspecifieds
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
