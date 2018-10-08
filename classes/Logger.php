@@ -61,7 +61,7 @@
             function genLogger($log_msg)
             {
                 $date = "[" . date("M d Y, H: m") . "] ";
-                $log_filename = "logs";
+                $log_filename = $_SERVER['DOCUMENT_ROOT']."/logs";
                 if (!file_exists($log_filename))
                 {
                     // create directory/folder uploads.
@@ -74,7 +74,7 @@
             function bioLogger($log_msg)
             {
                 $date = "[" . date("M d Y, H: m") . "] ";
-                $log_filename = "logs/biodegradeable";
+                $log_filename = $_SERVER['DOCUMENT_ROOT']."/logs/biodegradeable";
                 if (!file_exists($log_filename))
                 {
                     // create directory/folder uploads.
@@ -87,7 +87,7 @@
             function nonLogger($log_msg)
             {
                 $date = "[" . date("M d Y, H: m") . "] ";
-                $log_filename = "logs/nonbiodegradeable";
+                $log_filename = $_SERVER['DOCUMENT_ROOT']."/logs/nonbiodegradeable";
                 if (!file_exists($log_filename))
                 {
                     // create directory/folder uploads.
@@ -100,7 +100,7 @@
             function unsLogger($log_msg)
             {
                 $date = "[" . date("M d Y, H: m") . "] ";
-                $log_filename = "logs/unspecified";
+                $log_filename = $_SERVER['DOCUMENT_ROOT']."/logs/unspecified";
                 if (!file_exists($log_filename))
                 {
                     // create directory/folder uploads.

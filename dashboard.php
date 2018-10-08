@@ -9,9 +9,17 @@
             $scheduler = new \pulut\Scheduler();
             $log = new \pulut\Logger();
         ?>
+        <script>
+            function submitAddQuery() {
+                var objectName = document.getElementById('objectName-AdderWidget');
+                var objectType = document.getElementById('objectType-AdderWidget');
+                var XMLHttp = new XMLHttpRequest();
+                XMLHttp.open("POST","async/dbd_addWasteObj.php", true);
+                XMLHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+                XMLHttp.send("objectName="+objectName.value+"&objectType="+objectType.value);
+            }
+        </script>
     </head>
-
-
     <body>
         <?php include_once 'components/header.php' ?>
         <div class="fluid container">
@@ -23,8 +31,7 @@
                         <div class="description">
                             <div class="ui list">
                                 <div class="item">
-                                    <div class="right floated content">
-                                        <i class="green circle icon"></i>
+                                    <div class="right floated content"  id="bioOperational">
                                     </div>
                                     <i class="trash icon"></i>
                                     <div class="content">
@@ -34,8 +41,7 @@
                             </div>
                             <div class="ui list">
                                 <div class="item">
-                                    <div class="right floated content">
-                                        <i class="green circle icon"></i>
+                                    <div class="right floated content" id="nonOperational">
                                     </div>
                                     <i class="trash icon"></i>
                                     <div class="content">
@@ -45,8 +51,7 @@
                             </div>
                             <div class="ui list">
                                 <div class="item">
-                                    <div class="right floated content">
-                                        <i class="green circle icon"></i>
+                                    <div class="right floated content"  id="unsOperational">
                                     </div>
                                     <i class="trash icon"></i>
                                     <div class="content">
@@ -255,83 +260,114 @@
             setInterval(function() {
                 var bioLog = document.getElementById("bioLog");
                 var xmlHttp3 = new XMLHttpRequest();
-                xmlHttp3.onreadystatechange = function(resp) {
+                xmlHttp3.onreadystatechange = function (resp) {
                     if (this.status == 200 && this.readyState == 4) {
                         bioLog.innerText = this.responseText;
                     }
                 };
-                xmlHttp3.open("GET","async/bioLogReader.php", true);
+                xmlHttp3.open("GET", "async/bioLogReader.php", true);
                 xmlHttp3.send();
 
                 var nonLog = document.getElementById("nonLog");
                 var xmlHttp4 = new XMLHttpRequest();
-                xmlHttp4.onreadystatechange = function(resp) {
+                xmlHttp4.onreadystatechange = function (resp) {
                     if (this.status == 200 && this.readyState == 4) {
                         nonLog.innerText = this.responseText;
                     }
                 };
-                xmlHttp4.open("GET","async/nonLogReader.php", true);
+                xmlHttp4.open("GET", "async/nonLogReader.php", true);
                 xmlHttp4.send();
 
                 var unsLog = document.getElementById("unsLog");
                 var xmlHttp5 = new XMLHttpRequest();
-                xmlHttp5.onreadystatechange = function(resp) {
+                xmlHttp5.onreadystatechange = function (resp) {
                     if (this.status == 200 && this.readyState == 4) {
                         unsLog.innerText = this.responseText;
                     }
                 };
-                xmlHttp5.open("GET","async/unsLogReader.php", true);
+                xmlHttp5.open("GET", "async/unsLogReader.php", true);
                 xmlHttp5.send();
 
                 var latestLog = document.getElementById("latestLog");
                 var xmlHttp6 = new XMLHttpRequest();
-                xmlHttp6.onreadystatechange = function(resp) {
+                xmlHttp6.onreadystatechange = function (resp) {
                     if (this.status == 200 && this.readyState == 4) {
                         latestLog.innerText = this.responseText;
                     }
                 };
-                xmlHttp6.open("GET","async/latestLogReader.php", true);
+                xmlHttp6.open("GET", "async/latestLogReader.php", true);
                 xmlHttp6.send();
 
                 var bioCtr = document.getElementById("bioCtr");
                 var xmlHttp7 = new XMLHttpRequest();
-                xmlHttp7.onreadystatechange = function(resp) {
+                xmlHttp7.onreadystatechange = function (resp) {
                     if (this.status == 200 && this.readyState == 4) {
                         bioCtr.innerText = this.responseText;
                     }
                 };
-                xmlHttp7.open("GET","async/bioLogCounter.php", true);
+                xmlHttp7.open("GET", "async/bioLogCounter.php", true);
                 xmlHttp7.send();
 
                 var nonCtr = document.getElementById("nonCtr");
                 var xmlHttp8 = new XMLHttpRequest();
-                xmlHttp8.onreadystatechange = function(resp) {
+                xmlHttp8.onreadystatechange = function (resp) {
                     if (this.status == 200 && this.readyState == 4) {
                         nonCtr.innerText = this.responseText;
                     }
                 };
-                xmlHttp8.open("GET","async/nonLogCounter.php", true);
+                xmlHttp8.open("GET", "async/nonLogCounter.php", true);
                 xmlHttp8.send();
 
                 var unsCtr = document.getElementById("unsCtr");
                 var xmlHttp9 = new XMLHttpRequest();
-                xmlHttp9.onreadystatechange = function(resp) {
+                xmlHttp9.onreadystatechange = function (resp) {
                     if (this.status == 200 && this.readyState == 4) {
                         unsCtr.innerText = this.responseText;
                     }
                 };
-                xmlHttp9.open("GET","async/unsLogCounter.php", true);
+                xmlHttp9.open("GET", "async/unsLogCounter.php", true);
                 xmlHttp9.send();
 
                 var latestCtr = document.getElementById("latestCtr");
                 var xmlHttp10 = new XMLHttpRequest();
-                xmlHttp10.onreadystatechange = function(resp) {
+                xmlHttp10.onreadystatechange = function (resp) {
                     if (this.status == 200 && this.readyState == 4) {
                         latestCtr.innerText = this.responseText;
                     }
                 };
-                xmlHttp10.open("GET","async/latestLogCounter.php", true);
-                xmlHttp10.send();}, 1000);
+                xmlHttp10.open("GET", "async/latestLogCounter.php", true);
+                xmlHttp10.send();
+
+                var bioOperational = document.getElementById("bioOperational");
+                var xmlHttp11 = new XMLHttpRequest();
+                xmlHttp11.onreadystatechange = function (resp) {
+                    if (this.status == 200 && this.readyState == 4) {
+                        bioOperational.innerHTML = this.response;
+                    }
+                };
+                xmlHttp11.open("GET", "async/dashbd_bio_operational.php", true);
+                xmlHttp11.send();
+
+                var nonOperational = document.getElementById("nonOperational");
+                var xmlHttp12 = new XMLHttpRequest();
+                xmlHttp12.onreadystatechange = function (resp) {
+                    if (this.status == 200 && this.readyState == 4) {
+                        nonOperational.innerHTML = this.response;
+                    }
+                };
+                xmlHttp12.open("GET", "async/dashbd_non_operational.php", true);
+                xmlHttp12.send();
+
+                var unsOperational = document.getElementById("unsOperational");
+                var xmlHttp13 = new XMLHttpRequest();
+                xmlHttp13.onreadystatechange = function (resp) {
+                    if (this.status == 200 && this.readyState == 4) {
+                        unsOperational.innerHTML = this.response;
+                    }
+                };
+                xmlHttp13.open("GET", "async/dashbd_uns_operational.php", true);
+                xmlHttp13.send();
+            }, 1000);
         </script>
         <?php include_once "components/endScript.php" ?>
     </body>
