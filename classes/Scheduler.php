@@ -105,6 +105,14 @@
                 return mb_strtoupper(date('M', strtotime($date)));
             }
 
+            public function returnShortDate($date) {
+                return mb_strtoupper(date('F d, Y', strtotime($date)));
+            }
+
+            public function returnLongMonthPlural($date) {
+                return mb_strtoupper(date('l', strtotime($date)))."S";
+            }
+
             public function returnDay($date) {
                 return date('d', strtotime($date));
             }

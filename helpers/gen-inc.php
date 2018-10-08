@@ -43,13 +43,6 @@
         min-height: 100vh
     }
 
-    .card .description {
-        overflow-x: scroll;
-    }
-
-    ::-webkit-scrollbar{
-        display: none;
-    }
 
     .ui.inverted.menu a.item:hover{
         background-color: rgba(0, 0, 0, 0) !important;

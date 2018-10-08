@@ -3,6 +3,9 @@
     <head>
         <title>Welcome to Pulut-Pukyutan!</title>
         <?php include_once 'helpers/gen-inc.php' ?>
+        <?php include_once 'classes/Scheduler.php';
+            $scheduler = new \pulut\Scheduler();
+        ?>
     </head>
 
 
@@ -121,7 +124,7 @@
                     <div class="content">
                         <div class="header">System Metrics</div>
                         <div class="meta">Quantifiable Details</div>
-                        <div class="description">
+                        <div class="description" style="overflow-y: hidden; overflow-x: scroll;">
                             <div id="chart_div" style="width: 400px; height: 120px;"></div>
                         </div>
                     </div>
@@ -208,12 +211,17 @@
                         <div class="header">Reminders</div>
                         <div class="meta">Waste Colleciton</div>
                         <div class="description">
-                            TUESDAYS<br />
-                            September XX, XXXX<br />
-                            FRIDAYS<br />
-                            September xX, XXXX<br />
-                            SATURDAYS<br />
-                            September XX, XXXX<br />
+                            <?php
+                            $ctr = 0;
+                            foreach ($scheduler->getWeekLongDates(date('Y-m-d')) as $date) {
+                                if ($scheduler->compareDate($date)) {
+                                    echo $scheduler->returnLongMonthPlural($date)."<br />";
+                                    echo ucfirst(strtolower($scheduler->returnShortDate($date)))."<br />";
+                                    $ctr+=1;
+                                }
+                                if ($ctr==3) break;
+                            }
+                            ?>
                         </div>
                     </div>
                 </div>
