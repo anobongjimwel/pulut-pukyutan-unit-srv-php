@@ -169,7 +169,7 @@
                             <div class="ui list">
                                 <div class="item">
                                     <div class="right floated content">
-                                        99 Objs.
+                                        99 Objects
                                     </div>
                                     <i class="trash icon"></i>
                                     <div class="content">
@@ -191,7 +191,7 @@
                             <div class="ui list">
                                 <div class="item">
                                     <div class="right floated content">
-                                        15
+                                        15 Objects
                                     </div>
                                     <i class="trash icon"></i>
                                     <div class="content">
@@ -211,7 +211,7 @@
                             <div class="ui list">
                                 <div class="item">
                                     <div class="right floated content">
-                                        99 Objs.
+                                        99 Objects
                                     </div>
                                     <i class="trash icon"></i>
                                     <div class="content">
@@ -233,7 +233,7 @@
                             <div class="ui list">
                                 <div class="item">
                                     <div class="right floated content">
-                                        15
+                                        15 Objects
                                     </div>
                                     <i class="trash icon"></i>
                                     <div class="content">
