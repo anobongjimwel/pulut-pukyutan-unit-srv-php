@@ -66,7 +66,7 @@
                     <div class="content">
                         <div class="header">Latest Log</div>
                         <div class="meta" id="latestCtr">System Activity</div>
-                        <div class="description" id="latestLog">
+                        <div class="description" id="latestLog" style="overflow: hidden; white-space: nowrap">
                         </div>
                     </div>
                 </div>
@@ -232,7 +232,7 @@
                     <div class="content">
                         <div class="header">Biodegradable Log</div>
                         <div class="meta" id="bioCtr">Contents List</div>
-                        <div class="description" id="bioLog">
+                        <div class="description" id="bioLog" style="overflow: hidden; white-space: nowrap">
                         </div>
                     </div>
                 </div>
@@ -241,7 +241,7 @@
                     <div class="content">
                         <div class="header">Non-Biodegradable Log</div>
                         <div class="meta" id="nonCtr">Contents List</div>
-                        <div class="description" id="nonLog">
+                        <div class="description" id="nonLog" style="overflow: hidden; white-space: nowrap">
                         </div>
                     </div>
                 </div>
@@ -250,7 +250,7 @@
                     <div class="content">
                         <div class="header">Unspecified Log</div>
                         <div class="meta" id="unsCtr">Contents List</div>
-                        <div class="description" id="unsLog">
+                        <div class="description" id="unsLog" style="overflow: hidden; white-space: nowrap">
                         </div>
                     </div>
                 </div>
