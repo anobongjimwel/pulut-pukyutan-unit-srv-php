@@ -40,6 +40,46 @@
                     return false;
                 }
             }
+
+            public function getMaximumContent($unitNumber) {
+                switch ($unitNumber) {
+                    case $this::BIODEGRADABLE:
+                        $content = $this->pdo->query('SELECT prefValue FROM settings WHERE prefName = "biodegMaxCount"')->fetch(PDO::FETCH_ASSOC)['prefValue'];
+                        break;
+
+                    case $this::NONBIODEGRADEABLE:
+                        $content = $this->pdo->query('SELECT prefValue FROM settings WHERE prefName = "nonbioMaxCount"')->fetch(PDO::FETCH_ASSOC)['prefValue'];
+                        break;
+
+                    case $this::UNSPECIFIED:
+                        $content = $this->pdo->query('SELECT prefValue FROM settings WHERE prefName = "unspecMaxCount"')->fetch(PDO::FETCH_ASSOC)['prefValue'];
+                        break;
+
+                    default:
+                        $content = false;
+                }
+                return $content;
+            }
+
+            public function getContents($unitNumber) {
+                switch ($unitNumber) {
+                    case $this::BIODEGRADABLE:
+                        $content = $this->pdo->query('SELECT prefValue FROM settings WHERE prefName = "biodegCount"')->fetch(PDO::FETCH_ASSOC)['prefValue'];
+                        break;
+
+                    case $this::NONBIODEGRADEABLE:
+                        $content = $this->pdo->query('SELECT prefValue FROM settings WHERE prefName = "nonbioCount"')->fetch(PDO::FETCH_ASSOC)['prefValue'];
+                        break;
+
+                    case $this::UNSPECIFIED:
+                        $content = $this->pdo->query('SELECT prefValue FROM settings WHERE prefName = "unspecCount"')->fetch(PDO::FETCH_ASSOC)['prefValue'];
+                        break;
+
+                    default:
+                        $content = false;
+                }
+                return $content;
+            }
         }
     }
 ?>

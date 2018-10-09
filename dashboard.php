@@ -22,6 +22,8 @@
                 XMLHttp.open("POST","async/dbd_addWasteObj.php", true);
                 XMLHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
                 XMLHttp.send("objectName="+objectName.value+"&objectType="+objectType.value);
+                objectName.value = '';
+                objectName.focus();
             }
         </script>
     </head>
@@ -168,8 +170,8 @@
                         <div class="description">
                             <div class="ui list">
                                 <div class="item">
-                                    <div class="right floated content">
-                                        99 Objects
+                                    <div class="right floated content" id="bioMax">
+
                                     </div>
                                     <i class="trash icon"></i>
                                     <div class="content">
@@ -179,19 +181,19 @@
                             </div>
                             <div class="ui list">
                                 <div class="item">
-                                    <div class="right floated content">
-                                        102 Objects
+                                    <div class="right floated content" id="nonMax">
+
                                     </div>
                                     <i class="trash icon"></i>
                                     <div class="content">
-                                        Non-Biodegradable
+                                        Non-Biodegradeable
                                     </div>
                                 </div>
                             </div>
                             <div class="ui list">
                                 <div class="item">
-                                    <div class="right floated content">
-                                        15 Objects
+                                    <div class="right floated content" id="unsMax">
+
                                     </div>
                                     <i class="trash icon"></i>
                                     <div class="content">
@@ -210,8 +212,8 @@
                         <div class="description">
                             <div class="ui list">
                                 <div class="item">
-                                    <div class="right floated content">
-                                        99 Objects
+                                    <div class="right floated content" id="bioContent">
+
                                     </div>
                                     <i class="trash icon"></i>
                                     <div class="content">
@@ -221,8 +223,8 @@
                             </div>
                             <div class="ui list">
                                 <div class="item">
-                                    <div class="right floated content">
-                                        102 Objects
+                                    <div class="right floated content" id="nonContent">
+
                                     </div>
                                     <i class="trash icon"></i>
                                     <div class="content">
@@ -232,8 +234,8 @@
                             </div>
                             <div class="ui list">
                                 <div class="item">
-                                    <div class="right floated content">
-                                        15 Objects
+                                    <div class="right floated content" id="unsContent">
+
                                     </div>
                                     <i class="trash icon"></i>
                                     <div class="content">
@@ -404,6 +406,66 @@
                 };
                 xmlHttp13.open("GET", "async/dashbd_uns_operational.php", true);
                 xmlHttp13.send();
+
+                var bioMax = document.getElementById("bioMax");
+                var xmlHttp14 = new XMLHttpRequest();
+                xmlHttp14.onreadystatechange = function (resp) {
+                    if (this.status == 200 && this.readyState == 4) {
+                        bioMax.innerText = this.responseText;
+                    }
+                };
+                xmlHttp14.open("GET", "async/bioMaxCounter.php", true);
+                xmlHttp14.send();
+
+                var nonMax = document.getElementById("nonMax");
+                var xmlHttp15 = new XMLHttpRequest();
+                xmlHttp15.onreadystatechange = function (resp) {
+                    if (this.status == 200 && this.readyState == 4) {
+                        nonMax.innerText = this.responseText;
+                    }
+                };
+                xmlHttp15.open("GET", "async/nonMaxCounter.php", true);
+                xmlHttp15.send();
+
+                var unsMax = document.getElementById("unsMax");
+                var xmlHttp16 = new XMLHttpRequest();
+                xmlHttp16.onreadystatechange = function (resp) {
+                    if (this.status == 200 && this.readyState == 4) {
+                        unsMax.innerText = this.responseText;
+                    }
+                };
+                xmlHttp16.open("GET", "async/unsMaxCounter.php", true);
+                xmlHttp16.send();
+
+                var bioContent = document.getElementById("bioContent");
+                var xmlHttp17 = new XMLHttpRequest();
+                xmlHttp17.onreadystatechange = function (resp) {
+                    if (this.status == 200 && this.readyState == 4) {
+                        bioContent.innerText = this.responseText;
+                    }
+                };
+                xmlHttp17.open("GET", "async/bioContentCounter.php", true);
+                xmlHttp17.send();
+
+                var nonContent = document.getElementById("nonContent");
+                var xmlHttp18 = new XMLHttpRequest();
+                xmlHttp18.onreadystatechange = function (resp) {
+                    if (this.status == 200 && this.readyState == 4) {
+                        nonContent.innerText = this.responseText;
+                    }
+                };
+                xmlHttp18.open("GET", "async/nonContentCounter.php", true);
+                xmlHttp18.send();
+
+                var unsContent = document.getElementById("unsContent");
+                var xmlHttp19 = new XMLHttpRequest();
+                xmlHttp19.onreadystatechange = function (resp) {
+                    if (this.status == 200 && this.readyState == 4) {
+                        unsContent.innerText = this.responseText;
+                    }
+                };
+                xmlHttp19.open("GET", "async/nonContentCounter.php", true);
+                xmlHttp19.send();
             }, 1000);
         </script>
         <?php include_once "components/endScript.php" ?>
