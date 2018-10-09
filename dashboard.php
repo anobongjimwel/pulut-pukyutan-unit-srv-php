@@ -94,9 +94,9 @@
                                 ['Label', 'Value'],
                                 ['Memory', 0],
                                 ['CPU', 0],
-                                ['Biodeg', 42],
-                                ['NonBio', 35],
-                                ['Unspec', 84]
+                                ['Biodeg', 0],
+                                ['NonBio', 0],
+                                ['Unspec', 0]
                             ]);
 
                             var options = {
@@ -128,6 +128,33 @@
                                 };
                                 xmlHttp2.open("GET","async/CPU.php", true);
                                 xmlHttp2.send();
+
+                                var xmlHttp20 = new XMLHttpRequest();
+                                xmlHttp20.onreadystatechange = function(resp) {
+                                    if (this.status == 200 && this.readyState == 4) {
+                                        data.setValue(2, 1, this.responseText);
+                                    }
+                                };
+                                xmlHttp20.open("GET","async/bioContentCounter_2.php", true);
+                                xmlHttp20.send();
+
+                                var xmlHttp21 = new XMLHttpRequest();
+                                xmlHttp21.onreadystatechange = function(resp) {
+                                    if (this.status == 200 && this.readyState == 4) {
+                                        data.setValue(3, 1, this.responseText);
+                                    }
+                                };
+                                xmlHttp21.open("GET","async/nonContentCounter_2.php", true);
+                                xmlHttp21.send();
+
+                                var xmlHttp22 = new XMLHttpRequest();
+                                xmlHttp22.onreadystatechange = function(resp) {
+                                    if (this.status == 200 && this.readyState == 4) {
+                                        data.setValue(4, 1, this.responseText);
+                                    }
+                                };
+                                xmlHttp22.open("GET","async/unsContentCounter_2.php", true);
+                                xmlHttp22.send();
 
                                 chart.draw(data, options);
                             }, 1000);

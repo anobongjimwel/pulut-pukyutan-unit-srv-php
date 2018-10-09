@@ -69,7 +69,12 @@
                 }
             }
 
-            public function sendMessage($clientCorrelator, $message) {
+            public function sendMessage($message) {
+                $clientCorrelator = date("mdY")."-";
+                $alphaNum = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+                for ($i=0;$i<10;$i++) {
+                    $clientCorrelator.=$alphaNum[rand(0, strlen($alphaNum)-1)];
+                }
                 $argVals = array("address"=>$this->getContactNumber(), "message"=>$message, "clientCorrelator"=>"$clientCorrelator");
                 $args = http_build_query($argVals);
                 $cl = curl_init("https://devapi.globelabs.com.ph/smsmessaging/v1/outbound/".$this::FOUR_DIGIT_CODE."/requests?access_token=".$this->access_Token);
@@ -124,6 +129,15 @@
             public function getAccessToken() {
                 $accessToken = $this->pdo->query("SELECT prefValue FROM settings WHERE prefName = 'msg_accessToken'")->fetch(PDO::FETCH_ASSOC)['prefValue'];
                 return $accessToken;
+            }
+
+            public function isAppendItemMsgServiceEnabled() {
+                $accessToken = $this->pdo->query("SELECT prefValue FROM settings WHERE prefName = 'msg_append_items'")->fetch(PDO::FETCH_ASSOC)['prefValue'];
+                if ($accessToken==1) {
+                    return true;
+                } else {
+                    return false;
+                }
             }
         }
     }
