@@ -19,10 +19,10 @@
         } elseif ($objType == 'biodegradable') {
             $insert = $db->query("INSERT INTO wasteObjects (`objectName`,`objectType`) VALUES ('$objName', 'biodegradable')");
             if (!is_object($insert)) {
-                $log->nonLogger("Object '$objName' failed to categorize as biodegradeable");
+                $log->bioLogger("Object '$objName' failed to categorize as biodegradeable");
                 $log->genLogger("Object '$objName' failed to categorize as biodegradeable");
             } else {
-                $log->nonLogger("Object '$objName' now categorized as biodegradeable");
+                $log->bioLogger("Object '$objName' now categorized as biodegradeable");
                 $log->genLogger("Object '$objName' now categorized as biodegradeable");
                 echo 2;
             }

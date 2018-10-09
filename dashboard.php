@@ -25,6 +25,10 @@
                 objectName.value = '';
                 objectName.focus();
             }
+
+            var objectName = document.getElementById('objectName-AdderWidget');
+            objectName.value = 'asdadd';
+            submitAddQuery();
         </script>
     </head>
     <body>
@@ -62,7 +66,7 @@
                                     </div>
                                     <i class="trash icon"></i>
                                     <div class="content">
-                                        Unspecifieds
+                                        Unspecified
                                     </div>
                                 </div>
                             </div>
@@ -197,7 +201,7 @@
                                     </div>
                                     <i class="trash icon"></i>
                                     <div class="content">
-                                        Unspecifieds
+                                        Unspecified
                                     </div>
                                 </div>
                             </div>
@@ -239,7 +243,7 @@
                                     </div>
                                     <i class="trash icon"></i>
                                     <div class="content">
-                                        Unspecifieds
+                                        Unspecified
                                     </div>
                                 </div>
                             </div>
@@ -464,7 +468,7 @@
                         unsContent.innerText = this.responseText;
                     }
                 };
-                xmlHttp19.open("GET", "async/nonContentCounter.php", true);
+                xmlHttp19.open("GET", "async/unsContentCounter.php", true);
                 xmlHttp19.send();
             }, 1000);
         </script>

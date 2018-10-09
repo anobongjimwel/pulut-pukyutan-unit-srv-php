@@ -60,7 +60,7 @@
 
             function genLogger($log_msg)
             {
-                $date = "[" . date("M d Y, H: m") . "] ";
+                $date = "[" . date("M d Y, H: i") . "] ";
                 $log_filename = $_SERVER['DOCUMENT_ROOT']."/logs";
                 if (!file_exists($log_filename))
                 {
@@ -73,7 +73,7 @@
 
             function bioLogger($log_msg)
             {
-                $date = "[" . date("M d Y, H: m") . "] ";
+                $date = "[" . date("M d Y, H: i") . "] ";
                 $log_filename = $_SERVER['DOCUMENT_ROOT']."/logs/biodegradeable";
                 if (!file_exists($log_filename))
                 {
@@ -86,7 +86,7 @@
 
             function nonLogger($log_msg)
             {
-                $date = "[" . date("M d Y, H: m") . "] ";
+                $date = "[" . date("M d Y, H: i") . "] ";
                 $log_filename = $_SERVER['DOCUMENT_ROOT']."/logs/nonbiodegradeable";
                 if (!file_exists($log_filename))
                 {
@@ -99,7 +99,7 @@
 
             function unsLogger($log_msg)
             {
-                $date = "[" . date("M d Y, H: m") . "] ";
+                $date = "[" . date("M d Y, H: i") . "] ";
                 $log_filename = $_SERVER['DOCUMENT_ROOT']."/logs/unspecified";
                 if (!file_exists($log_filename))
                 {
@@ -121,6 +121,19 @@
                 fclose($handle);
 
                 return $linecount-1;
+            }
+
+            function messageLogger($log_msg)
+            {
+                $date = "[" . date("M d Y, H: i") . "] ";
+                $log_filename = $_SERVER['DOCUMENT_ROOT']."/logs/messages";
+                if (!file_exists($log_filename))
+                {
+                    // create directory/folder uploads.
+                    mkdir($log_filename, 0777, true);
+                }
+                $log_file_data = $log_filename.'/log_' . date("mdY") . '.log';
+                file_put_contents($log_file_data, $date . $log_msg . "\n", FILE_APPEND);
             }
         }
     }

@@ -5,16 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e01f967-89f0-4ab1-b91f-efb8b3b2ac68" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/async/bioContentCounter.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/async/bioMaxCounter.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/async/nonContentCounter.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/async/nonMaxCounter.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/async/unsContentCounter.php" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/async/unsMaxCounter.php" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/async/dbd_addWasteObj.php" afterPath="$PROJECT_DIR$/async/dbd_addWasteObj.php" />
-      <change beforePath="$PROJECT_DIR$/classes/TrashMonitor.php" afterPath="$PROJECT_DIR$/classes/TrashMonitor.php" />
+      <change beforePath="$PROJECT_DIR$/classes/Logger.php" afterPath="$PROJECT_DIR$/classes/Logger.php" />
       <change beforePath="$PROJECT_DIR$/dashboard.php" afterPath="$PROJECT_DIR$/dashboard.php" />
+      <change beforePath="$PROJECT_DIR$/logs/biodegradeable/log_10082018.log" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/logs/biodegradeable/log_10092018.log" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/logs/log_10082018.log" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/logs/log_10092018.log" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/logs/nonbiodegradeable/log_10082018.log" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/logs/nonbiodegradeable/log_10092018.log" afterPath="" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,11 +38,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="dashboard.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dashboard.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="188" column="58" lean-forward="false" selection-start-line="188" selection-start-column="58" selection-end-line="188" selection-end-column="58" />
+            <state relative-caret-position="808">
+              <caret line="470" column="48" lean-forward="false" selection-start-line="470" selection-start-column="48" selection-end-line="470" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -59,15 +58,45 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="dbd_addWasteObj.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="dbd_addWasteObj.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/async/dbd_addWasteObj.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+            <state relative-caret-position="336">
+              <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
               <folding>
-                <marker date="1539076278611" expanded="true" signature="357:450" ph="INSERT INTO wasteObjects... " />
-                <marker date="1539076278611" expanded="true" signature="1013:1102" ph="INSERT INTO wasteObjects... " />
+                <marker date="1539078489972" expanded="true" signature="357:450" ph="INSERT INTO wasteObjects... " />
+                <marker date="1539078489972" expanded="true" signature="1013:1102" ph="INSERT INTO wasteObjects... " />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="logger.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/async/logger.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Logger.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/Logger.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="668">
+              <caret line="127" column="16" lean-forward="false" selection-start-line="127" selection-start-column="16" selection-end-line="127" selection-end-column="16" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="unsContentCounter.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/async/unsContentCounter.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="78">
+              <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -82,41 +111,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nonContentCounter.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/async/nonContentCounter.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="3" column="57" lean-forward="false" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="unsContentCounter.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/async/unsContentCounter.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="3" column="51" lean-forward="false" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="nonLogReader.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/async/nonLogReader.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="56">
-              <caret line="4" column="68" lean-forward="false" selection-start-line="4" selection-start-column="68" selection-end-line="4" selection-end-column="68" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TrashMonitor.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/TrashMonitor.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="140">
-              <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+            <state relative-caret-position="325">
+              <caret line="63" column="28" lean-forward="false" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
               <folding>
                 <marker date="1539067668573" expanded="true" signature="795:802" ph="SELECT * FRO... " />
                 <marker date="1539067668573" expanded="true" signature="795:842" ph="SELECT prefV... settings" />
@@ -135,21 +134,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nonMaxCounter.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/async/nonMaxCounter.php">
+      <file leaf-file-name="bioLogCounter.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/async/bioLogCounter.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="3" column="73" lean-forward="false" selection-start-line="3" selection-start-column="73" selection-end-line="3" selection-end-column="73" />
+            <state relative-caret-position="84">
+              <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="unsMaxCounter.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/async/unsMaxCounter.php">
+      <file leaf-file-name="bioLogReader.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/async/bioLogReader.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="3" column="69" lean-forward="false" selection-start-line="3" selection-start-column="69" selection-end-line="3" selection-end-column="69" />
+            <state relative-caret-position="56">
+              <caret line="4" column="62" lean-forward="false" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
               <folding />
             </state>
           </provider>
@@ -164,6 +163,8 @@
       <find>submit</find>
       <find>Content Estiner</find>
       <find>unsMax</find>
+      <find>Unspecified</find>
+      <find>uns</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -196,7 +197,6 @@
         <option value="$PROJECT_DIR$/async/dashbd_bio_operational.php" />
         <option value="$PROJECT_DIR$/async/dashbd_non_operational.php" />
         <option value="$PROJECT_DIR$/async/dashbd_uns_operational.php" />
-        <option value="$PROJECT_DIR$/classes/Logger.php" />
         <option value="$PROJECT_DIR$/classes/InfoManager.php" />
         <option value="$PROJECT_DIR$/classes/TrashMonitor.php" />
         <option value="$PROJECT_DIR$/async/bioMaxCounter.php" />
@@ -205,8 +205,9 @@
         <option value="$PROJECT_DIR$/async/bioContentCounter.php" />
         <option value="$PROJECT_DIR$/async/nonContentCounter.php" />
         <option value="$PROJECT_DIR$/async/unsContentCounter.php" />
-        <option value="$PROJECT_DIR$/dashboard.php" />
+        <option value="$PROJECT_DIR$/classes/Logger.php" />
         <option value="$PROJECT_DIR$/async/dbd_addWasteObj.php" />
+        <option value="$PROJECT_DIR$/dashboard.php" />
       </list>
     </option>
   </component>
@@ -319,12 +320,12 @@
       <workItem from="1538921940147" duration="24138000" />
       <workItem from="1539065141940" duration="35000" />
       <workItem from="1539065373041" duration="2327000" />
-      <workItem from="1539073440318" duration="2114000" />
+      <workItem from="1539073440318" duration="4887000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="47784000" />
+    <option name="totallyTimeSpent" value="50557000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -361,13 +362,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/setup-complete.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" column="10" lean-forward="false" selection-start-line="14" selection-start-column="10" selection-end-line="14" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/setup-identity.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -528,13 +522,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/async/memUsage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/async/unsLogReader.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -603,6 +590,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2632">
           <caret line="188" column="9" lean-forward="false" selection-start-line="188" selection-start-column="9" selection-end-line="188" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -610,19 +598,12 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
           <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="5" selection-end-column="55" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/async/logs/log_10082018.log" />
     <entry file="file://$PROJECT_DIR$/async/logs/nonbiodegradeable/log_10082018.log" />
-    <entry file="file://$PROJECT_DIR$/classes/Logger.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1428">
-          <caret line="102" column="60" lean-forward="false" selection-start-line="102" selection-start-column="60" selection-end-line="102" selection-end-column="60" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logs/log_10082018.log">
       <provider selected="true" editor-type-id="LogFileEditorProvider">
         <state relative-caret-position="0">
@@ -642,24 +623,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/async/bioLogCounter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="84">
-          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/bioLogReader.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="56">
-          <caret line="4" column="62" lean-forward="false" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/async/nonLogCounter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
           <caret line="6" column="31" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="7" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -687,6 +655,73 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/async/nonContentCounter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="3" column="57" lean-forward="false" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/memUsage.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/logger.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Logger.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="668">
+          <caret line="127" column="16" lean-forward="false" selection-start-line="127" selection-start-column="16" selection-end-line="127" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/bioContentCounter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="42">
+          <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/bioLogCounter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="84">
+          <caret line="6" column="29" lean-forward="false" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/bioLogReader.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="56">
+          <caret line="4" column="62" lean-forward="false" selection-start-line="4" selection-start-column="62" selection-end-line="4" selection-end-column="62" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/dbd_addWasteObj.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="24" column="25" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="25" />
+          <folding>
+            <marker date="1539078489972" expanded="true" signature="357:450" ph="INSERT INTO wasteObjects... " />
+            <marker date="1539078489972" expanded="true" signature="1013:1102" ph="INSERT INTO wasteObjects... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/async/bioMaxCounter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="42">
@@ -695,10 +730,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/async/unsContentCounter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="78">
+          <caret line="3" column="23" lean-forward="false" selection-start-line="3" selection-start-column="23" selection-end-line="3" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/classes/TrashMonitor.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="140">
-          <caret line="10" column="28" lean-forward="false" selection-start-line="10" selection-start-column="28" selection-end-line="10" selection-end-column="28" />
+        <state relative-caret-position="325">
+          <caret line="63" column="28" lean-forward="false" selection-start-line="63" selection-start-column="28" selection-end-line="63" selection-end-column="28" />
           <folding>
             <marker date="1539067668573" expanded="true" signature="795:802" ph="SELECT * FRO... " />
             <marker date="1539067668573" expanded="true" signature="795:842" ph="SELECT prefV... settings" />
@@ -716,46 +759,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/async/unsContentCounter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="3" column="51" lean-forward="false" selection-start-line="3" selection-start-column="51" selection-end-line="3" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/nonContentCounter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="3" column="57" lean-forward="false" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/bioContentCounter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dashboard.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="188" column="58" lean-forward="false" selection-start-line="188" selection-start-column="58" selection-end-line="188" selection-end-column="58" />
+        <state relative-caret-position="808">
+          <caret line="470" column="48" lean-forward="false" selection-start-line="470" selection-start-column="48" selection-end-line="470" selection-end-column="48" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/dbd_addWasteObj.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="10" column="35" lean-forward="false" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
-          <folding>
-            <marker date="1539076278611" expanded="true" signature="357:450" ph="INSERT INTO wasteObjects... " />
-            <marker date="1539076278611" expanded="true" signature="1013:1102" ph="INSERT INTO wasteObjects... " />
-          </folding>
         </state>
       </provider>
     </entry>
