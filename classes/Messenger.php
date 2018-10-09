@@ -3,7 +3,7 @@
         use \pulut\Logger;
         use PDO;
         use Exception;
-        class Scheduler {
+        class Messenger {
             const APP_ID = "98egHrByoGhRdTEdRRiyMXhR98dRHyGB";
             const APP_SECRET = "721dbbfec1264a386e2529a661744e0b45d62e243d2bf86a7fdd3acefb031570";
             const SHORT_CODE = "21585395";
@@ -28,35 +28,45 @@
             }
 
             public function setAccessToken($code) {
-                $argVals = array("app_id"=>$this::APP_ID, "app_secret"=>$this::APP_SECRET, "code"=>$code);
+                $argVals = array("app_id"=>$this::APP_ID, "app_secret"=>$this::APP_SECRET, "code"=>"$code");
                 $args = http_build_query($argVals);
                 $cl = curl_init("https://developer.globelabs.com.ph/oauth/access_token");
                 curl_setopt($cl, CURLOPT_POST, true);
                 curl_setopt($cl, CURLOPT_POSTFIELDS, $args);
                 curl_setopt($cl, CURLOPT_RETURNTRANSFER, true);
                 try {
-                    $response = json_decode(curl_exec($cl), true);
-                    $accessToken = $response['access_token'];
-                    $subscriberNumber = $response['subscriber_number'];
-                    $setAccessToken = $this->pdo->query("UPDATE settings SET prefValue = '$accessToken' WHERE prefName = 'msg_accessToken'");
-                    $setSubscriberNum = $this->pdo->query("UPDATE settings SET prefValue = '$subscriberNumber' WHERE prefValue = 'msg_subscriberNumber'");
-                    if ($setAccessToken && $setSubscriberNum) {
-                        $this->log->messageLogger('Contact number for this unit has been successfully set.');
-                        $this->log->genLogger('Contact number for this unit has been successfully set.');
-                        curl_close($cl);
-                        return true;
+                    $initResponse = curl_exec($cl);
+                    $response = json_decode($initResponse);
+                    if (isset($response->access_token) && $response->subscriber_number) {
+                        $accessToken = $response->access_token;
+                        $subscriberNumber = $response->subscriber_number;
+                        $setAccessToken = $this->pdo->query("UPDATE settings SET prefValue = '$accessToken' WHERE prefName = 'msg_accessToken'");
+                        $setSubscriberNum = $this->pdo->query("UPDATE settings SET prefValue = '0$subscriberNumber' WHERE prefName = 'msg_subscriberNumber'");
+                        $good = true;
+                    } else {
+                        $good = false;
+                    }
+                    if (isset($setAccessToken) && isset($setSubscriberNum)) {
+                        if ($good!=false) {
+                            $this->log->messageLogger('Contact number for this unit has been successfully set.');
+                            $this->log->genLogger('Contact number for this unit has been successfully set.');
+                            curl_close($cl);
+                            return true;
+                        } else {
+                            $this->log->messageLogger('Contact number for this unit has failed to be set.');
+                            $this->log->genLogger('Contact number for this unit has failed to be set.');
+                            curl_close($cl);
+                            return false;
+                        }
                     } else {
                         $this->log->messageLogger('Contact number for this unit has failed to be set.');
                         $this->log->genLogger('Contact number for this unit has failed to be set.');
                         curl_close($cl);
                         return false;
-
                     }
                 } catch (Exception $e) {
-                    curl_close($cl);
                     return false;
                 }
-
             }
 
             public function sendMessage($clientCorrelator, $message) {

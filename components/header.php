@@ -47,7 +47,7 @@
         <div class="column">
             <h4 class="ui header">Communication</h4>
             <div class="ui inverted  link list">
-                <a class="item">Short Message System (SMS)</a>
+                <a class="item" href="messaging.php">Short Message System (SMS)</a>
                 <a class="item">Email Nessages</a>
                 <a class="item">Notifications</a>
             </div>
