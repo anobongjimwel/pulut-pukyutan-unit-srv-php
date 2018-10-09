@@ -9,6 +9,8 @@
             const SHORT_CODE = "21585395";
             const CROSS_TELCO_CODE = "29290585395)";
             const FOUR_DIGIT_CODE = "5395";
+            const SERVICE_ON = "1";
+            const SERVICE_OFF = "0";
             private $pdo;
             private $username, $password, $destination;
             private $log;
@@ -74,6 +76,32 @@
                     $this->log->messageLogger('Message '.$clientCorrelator." sending failed: \"".$message."\".");
                     $this->log->genLogger('Message '.$clientCorrelator." sending failed: \"".$message."\".");
                     curl_close($cl);
+                    return false;
+                }
+            }
+
+            public function isEnabled() {
+                $getStatus = $this->pdo->query("SELECT prefValue FROM settings WHERE prefName = 'msg_service'")->fetch(PDO::FETCH_ASSOC)['prefValue'];
+                if ($getStatus==1) {
+                    return true;
+                } else {
+                    return false;
+                }
+            }
+
+            public function toggleService($status) {
+                switch ($status) {
+                    case $this::SERVICE_ON:
+                        $setStatus = $this->pdo->query("UPDATE settings SET prefValue = '1' WHERE prefName = 'msg_service'");
+                        break;
+
+                    case $this::SERVICE_OFF:
+                        $setStatus = $this->pdo->query("UPDATE settings SET prefValue = '0' WHERE prefName = 'msg_service'");
+                        break;
+                }
+                if (is_object($setStatus)) {
+                    return true;
+                } else {
                     return false;
                 }
             }
