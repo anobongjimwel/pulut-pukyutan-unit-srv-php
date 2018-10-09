@@ -38,31 +38,51 @@
                                 if ($changeNumberStatus==1) {
                                     echo "<div class='ui positive message'>Number changed successfully!</div>";
                                 } else {
-                                    echo "<div class='ui negative message'>Number failed to change</div>";
+                                    echo "<div class='ui negative message'>Number change failed!</div>";
                                 }
                             }
                         ?>
+                        <br /><br />
+                        <font style="color: white; font-size: 20px;">Messaging Service Status</font><br /><br />
+                        <?php
+                            if ($messenger->isEnabled()) {
+                                echo "<font style=\"color: white; font-size: 18px;\">Messaging Service: Active</font>";
+                            } else {
+                                echo "<font style=\"color: white; font-size: 18px;\">Messaging Service: Inactive</font>";
+                            }
+                        ?>
+                        <br />
+                        <?php
+                            echo "<font style=\"color: white; font-size: 18px;\">Unit Contact Number: ".$messenger->getContactNumber()."</font>";
+                        ?>
+                        <br />
+                        <?php
+                        echo "<font style=\"color: white; font-size: 18px;\">Unit Access Token:<br />".$messenger->getAccessToken()."</font>";
+                        ?>
+                        <br /><br /><br />
+                        <font style="color: white; font-size: 20px;">Messaging Service Statistics</font><br /><br />
+                        <font style="color: white; font-size: 18px;">Today's Log Count:
+                        <?php
+                            echo $log->countLines("logs/messages/log_".date("mdY").".log"). " Line(s)";
+                        ?>
+                        </font>
                     </div>
                 </div>
                 <div class="twelve wide column">
                     <br />
                     <div style="padding: 10px; height: 100%; width: 100%; border-radius: 10px 10px 0 0; background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.1))">
-
+                        <font style="white-space: pre-wrap; color: white; font-size: 22px;"><?php
+                            if (!file_exists("logs/messages/log_" . date("mdY") . ".log")) {
+                                echo "No messaging service logs found for today";
+                            } else {
+                                echo (str_replace('[','<span style="font-size: 15px">[',trim(str_replace('] ',']</span><br />', $log->tailReader("logs/messages/log_" . date("mdY") . ".log", 10, true)))));
+                            }
+                        ?>
+                        </font>
                     </div>
                 </div>
             </div>
         </div>
         <?php include_once "components/endScript.php" ?>
-        <script>
-            function updateUpdBtn() {
-                var updBtn = document.getElementById('updBtn');
-                var updInput = document.getElementById('updInput');
-                if (updInput.value=='') {
-                    updBtn.setAttribute('class','ui green disabled button');
-                } else {
-                    updBtn.setAttribute('class','ui green button');
-                }
-            };
-        </script>
     </body>
 </html>

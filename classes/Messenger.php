@@ -48,8 +48,8 @@
                     }
                     if (isset($setAccessToken) && isset($setSubscriberNum)) {
                         if ($good!=false) {
-                            $this->log->messageLogger('Contact number for this unit has been successfully set.');
-                            $this->log->genLogger('Contact number for this unit has been successfully set.');
+                            $this->log->messageLogger('Contact number (0'.$subscriberNumber.') for this unit has been successfully set.');
+                            $this->log->genLogger('Contact number (0'.$subscriberNumber.') for this unit has been successfully set.');
                             curl_close($cl);
                             return true;
                         } else {
@@ -70,9 +70,9 @@
             }
 
             public function sendMessage($clientCorrelator, $message) {
-                $argVals = array("address"=>$this->subscriber_Number, "message"=>$message, "clientCorrelator"=>"$clientCorrelator");
+                $argVals = array("address"=>$this->getContactNumber(), "message"=>$message, "clientCorrelator"=>"$clientCorrelator");
                 $args = http_build_query($argVals);
-                $cl = curl_init("https://devapi.globelabs.com.ph/smsmessaging/v1/outbound/".$this::FOUR_DIGIT_CODE."/requests?access_token=".$this->access_Token."}");
+                $cl = curl_init("https://devapi.globelabs.com.ph/smsmessaging/v1/outbound/".$this::FOUR_DIGIT_CODE."/requests?access_token=".$this->access_Token);
                 curl_setopt($cl, CURLOPT_POST, true);
                 curl_setopt($cl, CURLOPT_POSTFIELDS, $args);
                 curl_setopt($cl, CURLOPT_RETURNTRANSFER, true);
@@ -114,6 +114,16 @@
                 } else {
                     return false;
                 }
+            }
+
+            public function getContactNumber() {
+                $contactNumber = $this->pdo->query("SELECT prefValue FROM settings WHERE prefName = 'msg_subscriberNumber'")->fetch(PDO::FETCH_ASSOC)['prefValue'];
+                return $contactNumber;
+            }
+
+            public function getAccessToken() {
+                $accessToken = $this->pdo->query("SELECT prefValue FROM settings WHERE prefName = 'msg_accessToken'")->fetch(PDO::FETCH_ASSOC)['prefValue'];
+                return $accessToken;
             }
         }
     }
