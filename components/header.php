@@ -4,11 +4,9 @@
             <img src="<?php echo $path['whiteLogo'] ?>">
         </div>
     </a>
-    <a href="dashboard.php">
-        <div class="item phoneOnly aligned center" id="left-side-dropdown-phone">
-            <img src="<?php echo $path['whiteLogo'] ?>">
-        </div>
-    </a>
+    <div class="item phoneOnly aligned center" id="left-side-dropdown-phone">
+        <img src="<?php echo $path['whiteLogo'] ?>">
+    </div>
     <a class="browse item computerOnly" id="left-side-dropdown">
         Pulot-Pukyutan: Unit SN-48X53Z
         <i class="dropdown icon"></i>
@@ -28,6 +26,7 @@
         <div class="column">
             <h4 class="ui header">Waste Unit</h4>
             <div class="ui inverted link list">
+                <a class="item" href="dashboard.php">Dashboard</a>
                 <a class="item">Operation Status</a>
                 <a class="item" href="statistics.php">Statistics</a>
                 <a class="item" href='schedules.php'>Schedules</a>

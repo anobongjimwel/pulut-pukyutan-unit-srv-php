@@ -52,6 +52,7 @@
     <body>
         <?php include_once 'components/header.php' ?>
         <div class="fluid container">
+            <font style="color: white; font-size: 30px;">Statistics</font><br /><br />
             <div class="ui four stackable column cards">
                 <div class="ui card" style="background-color: lightgray">
                     <div class="content">
