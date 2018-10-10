@@ -6,6 +6,7 @@
 <script src="components/jquery/jquery-3.2.1.js"></script>
 <script src="components/semantics/semantic.js"></script>
 <script src="components/semantics/package.js"></script>
+<script src="components/Chart.js"></script>
 <style>
     * {
         box-sizing: border-box;

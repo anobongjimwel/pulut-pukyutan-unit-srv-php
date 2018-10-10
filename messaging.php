@@ -31,7 +31,7 @@
                             </div>
                             <br />
                             <button type="button" class="ui blue button" onclick="window.open('https://developer.globelabs.com.ph/dialog/oauth/'+'<?php echo $messenger::APP_ID?>','_blank')">Get Code</button>
-                            <button type="submit" class="ui disabled green button" id="updBtn" name="updateNumber">Update </button>
+                            <button type="submit" class="ui green button" id="updBtn" name="updateNumber">Update </button>
                         </form>
                         <?php
                             if (isset($changeNumberStatus)) {

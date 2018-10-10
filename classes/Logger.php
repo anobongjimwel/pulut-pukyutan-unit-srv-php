@@ -1,5 +1,6 @@
 <?php
     namespace pulut {
+        use Exception;
         class Logger
         {
             /*
@@ -110,17 +111,21 @@
                 file_put_contents($log_file_data, $date . $log_msg . "\n", FILE_APPEND);
             }
 
-            function countLines($file) {
+            function countLines($file)
+            {
                 $linecount = 0;
-                $handle = fopen($file, "r");
-                while(!feof($handle)){
-                    $line = fgets($handle);
-                    $linecount++;
+                if (@fopen($file, "r") == false) {
+                    return 0;
+                } else {
+                    @$handle = fopen($file, "r");
+                    while (!feof($handle)) {
+                        $line = fgets($handle);
+                        $linecount++;
+                    }
+                    fclose($handle);
+
+                    return $linecount - 1;
                 }
-
-                fclose($handle);
-
-                return $linecount-1;
             }
 
             function messageLogger($log_msg)
