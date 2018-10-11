@@ -16,7 +16,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Welcome to Pulut-Pukyutan!</title>
+        <title>Collection Schedules</title>
         <?php include_once 'helpers/gen-inc.php' ?>
     </head>
 

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Welcome to Pulut-Pukyutan!</title>
+        <title>Pulut-Pukyutan Unit</title>
         <?php include_once 'helpers/gen-inc.php' ?>
         <?php
             include_once 'classes/Logger.php';

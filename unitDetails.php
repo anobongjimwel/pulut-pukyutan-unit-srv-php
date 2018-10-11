@@ -11,7 +11,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Welcome to Pulut-Pukyutan!</title>
+        <title>Pulot-Pukyutan Unit SN-48X53Z</title>
         <?php include_once 'helpers/gen-inc.php' ?>
     </head>
     <body>
