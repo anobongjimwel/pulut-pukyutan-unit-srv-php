@@ -57,7 +57,7 @@
                         ?>
                         <br />
                         <?php
-                        echo "<font style=\"color: white; font-size: 18px;\">Unit Access Token:<br />".$messenger->getAccessToken()."</font>";
+                        echo "<font style=\"color: white; font-size: 18px; width: 100%; overflow-wrap: break-word\">Unit Access Token:<br />".$messenger->getAccessToken()."</font>";
                         ?>
                         <br /><br /><br />
                         <font style="color: white; font-size: 20px;">Messaging Service Statistics</font><br /><br />
