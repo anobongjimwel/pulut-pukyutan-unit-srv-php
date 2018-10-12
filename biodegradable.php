@@ -32,12 +32,47 @@
                         </div>
                         <br /><br />
                         <div style="overflow-y: scroll; max-height: 60%; height: 60%; background-color: rgba(0,0,0,0)">
-                            
+                            <div class="ui fluid card" id="id1">
+                                <div class="content">
+                                    <div class="ui equal width stackable grid">
+                                        <div class="column">
+                                            <div class="header">
+                                                Cute Dog
+                                            </div>
+                                            <div class="meta">
+                                                2 days ago
+                                            </div>
+                                        </div>
+                                        <div class="column right aligned">
+                                            <button class="ui blue button" onclick="deleteObject('apple peel', 'id1')">Declassify</button>
+                                            <button class="ui red button">X</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
         <?php include_once "components/endScript.php" ?>
+    <script>
+        function deleteObject(item, objectID) {
+            var XMLHttp = new XMLHttpRequest();
+            XMLHttp.onreadystatechange = function () {
+                if (this.status == 200 && this.readyState == 4) {
+                    if (this.responseText=="GOOD") {
+                        $('#'+objectID)
+                            .transition('zoom');
+                    } else {
+                        alert('Cannot delete object! Try again.');
+                    }
+                }
+            };
+            XMLHttp.open('POST','async/deleteObject.php', true);
+            XMLHttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+            XMLHttp.send("wasteItem="+item+"&referrer=biodegradable%20unit");
+        }
+    </script>
     </body>
 </html>
