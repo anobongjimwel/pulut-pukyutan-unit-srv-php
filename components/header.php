@@ -35,10 +35,9 @@
         <div class="column">
             <h4 class="ui header">Database</h4>
             <div class="ui inverted link list">
-                <a class="item">Biodegradeable</a>
-                <a class="item">Non-biodegradeable</a>
-                <a class="item">Unspecifieds</a>
-                <a class="item">Export</a>
+                <a class="item" href='biodegradable.php'>Biodegradeable</a>
+                <a class="item" href='nonbiodegradable.php'>Non-biodegradeable</a>
+                <a class="item" href='unspecifieds.php'>Unspecifieds</a>
             </div>
 
         </div>

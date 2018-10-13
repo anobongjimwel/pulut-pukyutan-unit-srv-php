@@ -8,7 +8,7 @@
     if (!empty($_POST['objectName']) && !empty($_POST['objectType'])) {
         $objName = $_POST['objectName'];
         $objType = $_POST['objectType'];
-        if ($objType == 'non-biodegradable') {
+        if ($objType == 'nonbiodegradable') {
             $insert = $db->query("INSERT INTO wasteObjects (`objectName`,`objectType`) VALUES ('$objName', 'non-biodegradable')");
             if (!is_object($insert)) {
                 $log->nonLogger("Object '$objName' failed to categorize as non-biodegradeable");

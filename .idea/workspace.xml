@@ -5,15 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0e01f967-89f0-4ab1-b91f-efb8b3b2ac68" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/async/bioObjectsClassified.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/async/nnbdgblpg_helper.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/async/nonObjectsClassified.php" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/nonbiodegradable.php" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/async/declassifyObject.php" afterPath="$PROJECT_DIR$/async/declassifyObject.php" />
-      <change beforePath="$PROJECT_DIR$/biodegradable.php" afterPath="$PROJECT_DIR$/biodegradable.php" />
-      <change beforePath="$PROJECT_DIR$/classes/TrashClassifier.php" afterPath="$PROJECT_DIR$/classes/TrashClassifier.php" />
-      <change beforePath="$PROJECT_DIR$/logs/biodegradeable/log_10132018.log" afterPath="$PROJECT_DIR$/logs/biodegradeable/log_10132018.log" />
+      <change beforePath="$PROJECT_DIR$/async/addWasteObj.php" afterPath="$PROJECT_DIR$/async/addWasteObj.php" />
+      <change beforePath="$PROJECT_DIR$/components/header.php" afterPath="$PROJECT_DIR$/components/header.php" />
       <change beforePath="$PROJECT_DIR$/logs/log_10132018.log" afterPath="$PROJECT_DIR$/logs/log_10132018.log" />
       <change beforePath="$PROJECT_DIR$/logs/messages/log_10132018.log" afterPath="$PROJECT_DIR$/logs/messages/log_10132018.log" />
-      <change beforePath="$PROJECT_DIR$/statistics.php" afterPath="$PROJECT_DIR$/statistics.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -38,11 +37,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="biodegradable.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="biodegradable.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/biodegradable.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="574">
-              <caret line="156" column="51" lean-forward="false" selection-start-line="156" selection-start-column="51" selection-end-line="156" selection-end-column="51" />
+            <state relative-caret-position="1124">
+              <caret line="167" column="13" lean-forward="true" selection-start-line="167" selection-start-column="13" selection-end-line="167" selection-end-column="13" />
               <folding>
                 <element signature="n#style#0;n#font#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#font#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -56,58 +55,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="bioObjectsClassified.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/async/bioObjectsClassified.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="4" column="11" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="11" />
-              <folding>
-                <marker date="1539428064594" expanded="true" signature="60:121" ph="SELECT * FRO... wasteobjects" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="statistics.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/statistics.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-3166">
-              <caret line="41" column="25" lean-forward="false" selection-start-line="41" selection-start-column="25" selection-end-line="41" selection-end-column="25" />
-              <folding>
-                <element signature="n#style#0;n#canvas#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#7;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <marker date="1539426559325" expanded="true" signature="947:974" ph="..." />
-                <marker date="1539426559325" expanded="true" signature="1118:1147" ph="..." />
-                <marker date="1539426559325" expanded="true" signature="1290:1318" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bioContentCounter_2.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/async/bioContentCounter_2.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="66">
-              <caret line="3" column="38" lean-forward="false" selection-start-line="3" selection-start-column="38" selection-end-line="3" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="bioContentCounter.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/async/bioContentCounter.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="3" column="27" lean-forward="false" selection-start-line="3" selection-start-column="27" selection-end-line="3" selection-end-column="27" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="TrashClassifier.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/classes/TrashClassifier.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1362">
-              <caret line="10" column="51" lean-forward="false" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
+            <state relative-caret-position="-10">
+              <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
               <folding>
                 <marker date="1539423829682" expanded="true" signature="679:730" ph="DELETE FROM wasteObjects... " />
                 <marker date="1539423829682" expanded="true" signature="981:1034" ph="SELECT * FRO... wasteobjects" />
@@ -143,18 +95,73 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="declassifyObject.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/async/declassifyObject.php">
+      <file leaf-file-name="nonbiodegradable.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/nonbiodegradable.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="468">
-              <caret line="18" column="104" lean-forward="false" selection-start-line="18" selection-start-column="104" selection-end-line="18" selection-end-column="104" />
+            <state relative-caret-position="498">
+              <caret line="149" column="81" lean-forward="false" selection-start-line="149" selection-start-column="81" selection-end-line="149" selection-end-column="81" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrashThrower.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/TrashThrower.php">
+      <file leaf-file-name="nnbdgblpg_helper.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/async/nnbdgblpg_helper.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="472">
+              <caret line="34" column="100" lean-forward="true" selection-start-line="34" selection-start-column="100" selection-end-line="34" selection-end-column="100" />
+              <folding>
+                <marker date="1539436515325" expanded="true" signature="1183:1213" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="header.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/components/header.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="546">
+              <caret line="39" column="71" lean-forward="false" selection-start-line="39" selection-start-column="71" selection-end-line="39" selection-end-column="71" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nonObjectsClassified.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/async/nonObjectsClassified.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="154">
+              <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+              <folding>
+                <marker date="1539436702292" expanded="true" signature="60:125" ph="SELECT * FRO... wasteobjects" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Messenger.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/Messenger.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="719">
+              <caret line="133" column="28" lean-forward="false" selection-start-line="133" selection-start-column="28" selection-end-line="133" selection-end-column="28" />
+              <folding>
+                <marker date="1539109518727" expanded="true" signature="1096:1161" ph="SELECT prefV... settings" />
+                <marker date="1539109518727" expanded="true" signature="1265:1335" ph="SELECT prefV... settings" />
+                <marker date="1539109518727" expanded="true" signature="2297:2378" ph="UPDATE settings... " />
+                <marker date="1539109518727" expanded="true" signature="2445:2537" ph="UPDATE settings... " />
+                <marker date="1539109518727" expanded="true" signature="5611:5672" ph="SELECT prefV... settings" />
+                <marker date="1539109518727" expanded="true" signature="6064:6130" ph="UPDATE settings... " />
+                <marker date="1539109518727" expanded="true" signature="6267:6333" ph="UPDATE settings... " />
+                <marker date="1539109518727" expanded="true" signature="6657:6727" ph="SELECT prefV... settings" />
+                <marker date="1539109518727" expanded="true" signature="6920:6985" ph="SELECT prefV... settings" />
+                <marker date="1539109518727" expanded="true" signature="7191:7257" ph="SELECT prefV... settings" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="nonContentCounter.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/async/nonContentCounter.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -163,12 +170,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TrashMonitor.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/TrashMonitor.php">
+      <file leaf-file-name="bdgblpg_helper.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/async/bdgblpg_helper.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="672">
+              <caret line="48" column="67" lean-forward="false" selection-start-line="48" selection-start-column="67" selection-end-line="48" selection-end-column="67" />
+              <folding>
+                <marker date="1539415844553" expanded="true" signature="1183:1213" ph="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="addWasteObj.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/async/addWasteObj.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="294">
+              <caret line="21" column="51" lean-forward="false" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
+              <folding>
+                <marker date="1539436272306" expanded="true" signature="437:530" ph="INSERT INTO wasteObjects... " />
+                <marker date="1539436272306" expanded="true" signature="1456:1545" ph="INSERT INTO wasteObjects... " />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -195,10 +217,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/setup-identity.php" />
-        <option value="$PROJECT_DIR$/async/setCredentials.php" />
-        <option value="$PROJECT_DIR$/classes/Scheduler.php" />
-        <option value="$PROJECT_DIR$/gg.txt" />
         <option value="$PROJECT_DIR$/logsamp.php" />
         <option value="$PROJECT_DIR$/components/endScript.php" />
         <option value="$PROJECT_DIR$/async/bioLogReader.php" />
@@ -233,7 +251,6 @@
         <option value="$PROJECT_DIR$/async/nonContentCounter_2.php" />
         <option value="$PROJECT_DIR$/async/bioContentCounter_2.php" />
         <option value="$PROJECT_DIR$/classes/Logger.php" />
-        <option value="$PROJECT_DIR$/components/header.php" />
         <option value="$PROJECT_DIR$/unitDetails.php" />
         <option value="$PROJECT_DIR$/biodegradeable.php" />
         <option value="$PROJECT_DIR$/async/deleteObject.php" />
@@ -246,6 +263,11 @@
         <option value="$PROJECT_DIR$/statistics.php" />
         <option value="$PROJECT_DIR$/async/bioObjectsClassified.php" />
         <option value="$PROJECT_DIR$/biodegradable.php" />
+        <option value="$PROJECT_DIR$/async/addWasteObj.php" />
+        <option value="$PROJECT_DIR$/async/nnbdgblpg_helper.php" />
+        <option value="$PROJECT_DIR$/nonbiodegradable.php" />
+        <option value="$PROJECT_DIR$/async/nonObjectsClassified.php" />
+        <option value="$PROJECT_DIR$/components/header.php" />
       </list>
     </option>
   </component>
@@ -299,6 +321,11 @@
               <item name="Pulut-Pukyutan" type="b2602c69:ProjectViewProjectNode" />
               <item name="Pulut-Pukyutan" type="2a2b976b:PhpTreeStructureProvider$1" />
               <item name="components" type="2a2b976b:PhpTreeStructureProvider$1" />
+            </path>
+            <path>
+              <item name="Pulut-Pukyutan" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Pulut-Pukyutan" type="2a2b976b:PhpTreeStructureProvider$1" />
+              <item name="helpers" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
             <path>
               <item name="Pulut-Pukyutan" type="b2602c69:ProjectViewProjectNode" />
@@ -391,12 +418,12 @@
       <workItem from="1539262362628" duration="4027000" />
       <workItem from="1539302708650" duration="7543000" />
       <workItem from="1539402262069" duration="17491000" />
-      <workItem from="1539422879674" duration="7275000" />
+      <workItem from="1539422879674" duration="9654000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="122323000" />
+    <option name="totallyTimeSpent" value="124702000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -404,20 +431,20 @@
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1265625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13958333" sideWeight="0.5862069" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13958333" sideWeight="0.5893417" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13958333" sideWeight="0.41379312" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13958333" sideWeight="0.4106583" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3291536" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -434,34 +461,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/async/nonMaxCounter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="3" column="73" lean-forward="false" selection-start-line="3" selection-start-column="73" selection-end-line="3" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/unsMaxCounter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="3" column="69" lean-forward="false" selection-start-line="3" selection-start-column="69" selection-end-line="3" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/nonContentCounter.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="3" column="57" lean-forward="false" selection-start-line="3" selection-start-column="57" selection-end-line="3" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/logger.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="12" column="0" lean-forward="false" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/async/bioLogCounter.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="84">
@@ -551,13 +550,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/components/header.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="31" column="53" lean-forward="false" selection-start-line="31" selection-start-column="53" selection-end-line="31" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/unitDetails.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="392">
@@ -631,14 +623,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/async/bdgblpg_helper.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="48" column="67" lean-forward="false" selection-start-line="48" selection-start-column="67" selection-end-line="48" selection-end-column="67" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/messaging.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="259">
@@ -658,37 +642,6 @@
         <state relative-caret-position="162">
           <caret line="21" column="43" lean-forward="false" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/classes/Messenger.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1414">
-          <caret line="103" column="17" lean-forward="false" selection-start-line="103" selection-start-column="17" selection-end-line="103" selection-end-column="17" />
-          <folding>
-            <element signature="e#36#54#0#PHP" expanded="false" />
-            <marker date="1539109518727" expanded="true" signature="1096:1161" ph="SELECT prefV... settings" />
-            <marker date="1539109518727" expanded="true" signature="1265:1335" ph="SELECT prefV... settings" />
-            <marker date="1539109518727" expanded="true" signature="2297:2378" ph="UPDATE settings... " />
-            <marker date="1539109518727" expanded="true" signature="2445:2537" ph="UPDATE settings... " />
-            <marker date="1539109518727" expanded="true" signature="5611:5672" ph="SELECT prefV... settings" />
-            <marker date="1539109518727" expanded="true" signature="6064:6130" ph="UPDATE settings... " />
-            <marker date="1539109518727" expanded="true" signature="6267:6333" ph="UPDATE settings... " />
-            <marker date="1539109518727" expanded="true" signature="6657:6727" ph="SELECT prefV... settings" />
-            <marker date="1539109518727" expanded="true" signature="6920:6985" ph="SELECT prefV... settings" />
-            <marker date="1539109518727" expanded="true" signature="7191:7257" ph="SELECT prefV... settings" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/async/addWasteObj.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="5" lean-forward="false" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="5" />
-          <folding>
-            <marker date="1539109216210" expanded="true" signature="438:531" ph="INSERT INTO wasteObjects... " />
-            <marker date="1539109216210" expanded="true" signature="1457:1546" ph="INSERT INTO wasteObjects... " />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -759,44 +712,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/TrashClassifier.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1362">
-          <caret line="10" column="51" lean-forward="false" selection-start-line="10" selection-start-column="51" selection-end-line="10" selection-end-column="51" />
-          <folding>
-            <marker date="1539423829682" expanded="true" signature="679:730" ph="DELETE FROM wasteObjects... " />
-            <marker date="1539423829682" expanded="true" signature="981:1034" ph="SELECT * FRO... wasteobjects" />
-            <marker date="1539423829682" expanded="true" signature="1227:1306" ph="UPDATE wasteObjects... " />
-            <marker date="1539423829682" expanded="true" signature="1461:1544" ph="UPDATE wasteObjects... " />
-            <marker date="1539423829682" expanded="true" signature="1693:1770" ph="UPDATE wasteObjects... " />
-            <marker date="1539423829682" expanded="true" signature="2002:2084" ph="INSERT INTO wasteobjects... " />
-            <marker date="1539423829682" expanded="true" signature="2236:2322" ph="INSERT INTO wasteobjects... " />
-            <marker date="1539423829682" expanded="true" signature="2472:2552" ph="INSERT INTO wasteobjects... " />
-            <marker date="1539423829682" expanded="true" signature="2976:3037" ph="SELECT * FRO... wasteobjects" />
-            <marker date="1539423829682" expanded="true" signature="2976:3046" ph="SELECT * FRO... wasteobjects" />
-            <marker date="1539423829682" expanded="true" signature="3179:3244" ph="SELECT * FRO... wasteobjects" />
-            <marker date="1539423829682" expanded="true" signature="3179:3253" ph="SELECT * FRO... wasteobjects" />
-            <marker date="1539423829682" expanded="true" signature="3380:3439" ph="SELECT * FRO... wasteobjects" />
-            <marker date="1539423829682" expanded="true" signature="3380:3448" ph="SELECT * FRO... wasteobjects" />
-            <marker date="1539423829682" expanded="true" signature="3885:3955" ph="SELECT * FRO... wasteobjects" />
-            <marker date="1539423829682" expanded="true" signature="4088:4162" ph="SELECT * FRO... wasteobjects" />
-            <marker date="1539423829682" expanded="true" signature="4289:4357" ph="SELECT * FRO... wasteobjects" />
-            <marker date="1539423829682" expanded="true" signature="4668:4721" ph="SELECT * FRO... wasteobjects" />
-            <marker date="1539423829682" expanded="true" signature="4668:4730" ph="SELECT * FRO... wasteobjects" />
-            <marker date="1539423829682" expanded="true" signature="5013:5075" ph="SELECT * FRO... wasteobjects" />
-            <marker date="1539423829682" expanded="true" signature="5467:5558" ph="SELECT * FRO... wasteobjects" />
-            <marker date="1539423829682" expanded="true" signature="5467:5567" ph="SELECT * FRO... wasteobjects" />
-            <marker date="1539423829682" expanded="true" signature="5700:5765" ph="SELECT * FRO... wasteobjects" />
-            <marker date="1539423829682" expanded="true" signature="5700:5804" ph="SELECT * FRO... wasteobjects" />
-            <marker date="1539423829682" expanded="true" signature="5931:5990" ph="SELECT * FRO... wasteobjects" />
-            <marker date="1539423829682" expanded="true" signature="5931:6029" ph="SELECT * FRO... wasteobjects" />
-            <marker date="1539423829682" expanded="true" signature="6479:6579" ph="SELECT * FRO... wasteobjects" />
-            <marker date="1539423829682" expanded="true" signature="6712:6816" ph="SELECT * FRO... wasteobjects" />
-            <marker date="1539423829682" expanded="true" signature="6943:7041" ph="SELECT * FRO... wasteobjects" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/async/bioContentCounter_2.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="66">
@@ -844,10 +759,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/async/nonContentCounter.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/nonObjectsClassified.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="1" lean-forward="true" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
+          <folding>
+            <marker date="1539436702292" expanded="true" signature="60:125" ph="SELECT * FRO... wasteobjects" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/bdgblpg_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="672">
+          <caret line="48" column="67" lean-forward="false" selection-start-line="48" selection-start-column="67" selection-end-line="48" selection-end-column="67" />
+          <folding>
+            <marker date="1539415844553" expanded="true" signature="1183:1213" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/biodegradable.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="574">
-          <caret line="156" column="51" lean-forward="false" selection-start-line="156" selection-start-column="51" selection-end-line="156" selection-end-column="51" />
+        <state relative-caret-position="1124">
+          <caret line="167" column="13" lean-forward="true" selection-start-line="167" selection-start-column="13" selection-end-line="167" selection-end-column="13" />
           <folding>
             <element signature="n#style#0;n#font#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#font#1;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -857,6 +800,100 @@
             <element signature="n#style#0;n#font#1;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/TrashClassifier.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-10">
+          <caret line="7" column="14" lean-forward="false" selection-start-line="7" selection-start-column="14" selection-end-line="7" selection-end-column="14" />
+          <folding>
+            <marker date="1539423829682" expanded="true" signature="679:730" ph="DELETE FROM wasteObjects... " />
+            <marker date="1539423829682" expanded="true" signature="981:1034" ph="SELECT * FRO... wasteobjects" />
+            <marker date="1539423829682" expanded="true" signature="1227:1306" ph="UPDATE wasteObjects... " />
+            <marker date="1539423829682" expanded="true" signature="1461:1544" ph="UPDATE wasteObjects... " />
+            <marker date="1539423829682" expanded="true" signature="1693:1770" ph="UPDATE wasteObjects... " />
+            <marker date="1539423829682" expanded="true" signature="2002:2084" ph="INSERT INTO wasteobjects... " />
+            <marker date="1539423829682" expanded="true" signature="2236:2322" ph="INSERT INTO wasteobjects... " />
+            <marker date="1539423829682" expanded="true" signature="2472:2552" ph="INSERT INTO wasteobjects... " />
+            <marker date="1539423829682" expanded="true" signature="2976:3037" ph="SELECT * FRO... wasteobjects" />
+            <marker date="1539423829682" expanded="true" signature="2976:3046" ph="SELECT * FRO... wasteobjects" />
+            <marker date="1539423829682" expanded="true" signature="3179:3244" ph="SELECT * FRO... wasteobjects" />
+            <marker date="1539423829682" expanded="true" signature="3179:3253" ph="SELECT * FRO... wasteobjects" />
+            <marker date="1539423829682" expanded="true" signature="3380:3439" ph="SELECT * FRO... wasteobjects" />
+            <marker date="1539423829682" expanded="true" signature="3380:3448" ph="SELECT * FRO... wasteobjects" />
+            <marker date="1539423829682" expanded="true" signature="3885:3955" ph="SELECT * FRO... wasteobjects" />
+            <marker date="1539423829682" expanded="true" signature="4088:4162" ph="SELECT * FRO... wasteobjects" />
+            <marker date="1539423829682" expanded="true" signature="4289:4357" ph="SELECT * FRO... wasteobjects" />
+            <marker date="1539423829682" expanded="true" signature="4668:4721" ph="SELECT * FRO... wasteobjects" />
+            <marker date="1539423829682" expanded="true" signature="4668:4730" ph="SELECT * FRO... wasteobjects" />
+            <marker date="1539423829682" expanded="true" signature="5013:5075" ph="SELECT * FRO... wasteobjects" />
+            <marker date="1539423829682" expanded="true" signature="5467:5558" ph="SELECT * FRO... wasteobjects" />
+            <marker date="1539423829682" expanded="true" signature="5467:5567" ph="SELECT * FRO... wasteobjects" />
+            <marker date="1539423829682" expanded="true" signature="5700:5765" ph="SELECT * FRO... wasteobjects" />
+            <marker date="1539423829682" expanded="true" signature="5700:5804" ph="SELECT * FRO... wasteobjects" />
+            <marker date="1539423829682" expanded="true" signature="5931:5990" ph="SELECT * FRO... wasteobjects" />
+            <marker date="1539423829682" expanded="true" signature="5931:6029" ph="SELECT * FRO... wasteobjects" />
+            <marker date="1539423829682" expanded="true" signature="6479:6579" ph="SELECT * FRO... wasteobjects" />
+            <marker date="1539423829682" expanded="true" signature="6712:6816" ph="SELECT * FRO... wasteobjects" />
+            <marker date="1539423829682" expanded="true" signature="6943:7041" ph="SELECT * FRO... wasteobjects" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nonbiodegradable.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="498">
+          <caret line="149" column="81" lean-forward="false" selection-start-line="149" selection-start-column="81" selection-end-line="149" selection-end-column="81" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/addWasteObj.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="294">
+          <caret line="21" column="51" lean-forward="false" selection-start-line="21" selection-start-column="51" selection-end-line="21" selection-end-column="51" />
+          <folding>
+            <marker date="1539436272306" expanded="true" signature="437:530" ph="INSERT INTO wasteObjects... " />
+            <marker date="1539436272306" expanded="true" signature="1456:1545" ph="INSERT INTO wasteObjects... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/Messenger.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="719">
+          <caret line="133" column="28" lean-forward="false" selection-start-line="133" selection-start-column="28" selection-end-line="133" selection-end-column="28" />
+          <folding>
+            <marker date="1539109518727" expanded="true" signature="1096:1161" ph="SELECT prefV... settings" />
+            <marker date="1539109518727" expanded="true" signature="1265:1335" ph="SELECT prefV... settings" />
+            <marker date="1539109518727" expanded="true" signature="2297:2378" ph="UPDATE settings... " />
+            <marker date="1539109518727" expanded="true" signature="2445:2537" ph="UPDATE settings... " />
+            <marker date="1539109518727" expanded="true" signature="5611:5672" ph="SELECT prefV... settings" />
+            <marker date="1539109518727" expanded="true" signature="6064:6130" ph="UPDATE settings... " />
+            <marker date="1539109518727" expanded="true" signature="6267:6333" ph="UPDATE settings... " />
+            <marker date="1539109518727" expanded="true" signature="6657:6727" ph="SELECT prefV... settings" />
+            <marker date="1539109518727" expanded="true" signature="6920:6985" ph="SELECT prefV... settings" />
+            <marker date="1539109518727" expanded="true" signature="7191:7257" ph="SELECT prefV... settings" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/async/nnbdgblpg_helper.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="34" column="100" lean-forward="true" selection-start-line="34" selection-start-column="100" selection-end-line="34" selection-end-column="100" />
+          <folding>
+            <marker date="1539436515325" expanded="true" signature="1183:1213" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/components/header.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="546">
+          <caret line="39" column="71" lean-forward="false" selection-start-line="39" selection-start-column="71" selection-end-line="39" selection-end-column="71" />
+          <folding />
         </state>
       </provider>
     </entry>
