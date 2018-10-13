@@ -27,12 +27,26 @@
                             <input type="text" placeholder="Object Name" id="updInput">
                         </div>
                         <br />
-                        <button type="button" class="ui green button" id="updBtn">Add</button>
+                        <button type="button" class="ui green  button" id="updBtn" disabled="disabled">Add</button>
                         <button type="button" class="ui red button" id="resetBtn">Reset</button>
                     </div>
                     <br />
                     <div style="border-radius: 10px; width: 100%; background-color: rgba(255, 255, 255, 0.2); padding: 10px;">
                         <font style="color: white; font-size: 20px;">Biodegradable Unit Information</font>
+                        <br /><br />
+                        <div class="ui equal width grid">
+                            <div class="column">
+                                <font style="color: white; font-size: 20px" id="contentCount">X</font><br />
+                                <font style="color: white; font-size: 14px">Contents</font><br />
+                                <br />
+                                <font style="color: white; font-size: 20px" id="classifiedObjs">X</font><br />
+                                <font style="color: white; font-size: 14px">Classified Objs</font><br />
+                            </div>
+                            <div class="column">
+                                <font style="color: white; font-size: 20px" id="maximumObj">X</font><br />
+                                <font style="color: white; font-size: 14px">Maximum</font><br />
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="twelve wide column">
@@ -125,6 +139,10 @@
                             alert('Object "'+$('#updInput').val()+'" failed to be added as biodegradable object.');
                         }
                         $('#updInput').val("");
+                        setClassifiedObjs();
+                        setMaximum();
+                        setCounter();
+                        updateQuery();
                     }
                 };
                 XMLHttp.open('POST','async/addWasteObj.php');
@@ -136,8 +154,50 @@
             $('#resetBtn').click(function() {
                 $('#updInput').val('');
                 $('#updInput').focus();
-            })
+                $('#updBtn').prop('disabled',true);
+            });
 
+            function setCounter() {
+                var XMLHttp = new XMLHttpRequest();
+                XMLHttp.onreadystatechange = function() {
+                    $('#contentCount').text(this.responseText);
+                };
+                XMLHttp.open('GET','async/bioContentCounter.php');
+                XMLHttp.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+                XMLHttp.send();
+            }
+
+            function setMaximum() {
+                var XMLHttp = new XMLHttpRequest();
+                XMLHttp.onreadystatechange = function() {
+                    $('#maximumObj').text(this.responseText);
+                };
+                XMLHttp.open('GET','async/bioMaxCounter.php');
+                XMLHttp.setRequestHeader('Content-type','application/x-www-form-urlencoded');
+                XMLHttp.send();
+            }
+
+            function setClassifiedObjs() {
+                var XMLHttp = new XMLHttpRequest();
+                XMLHttp.onreadystatechange = function () {
+                    $('#classifiedObjs').text(this.responseText);
+                };
+                XMLHttp.open('GET', 'async/bioObjectsClassified.php');
+                XMLHttp.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+                XMLHttp.send();
+            }
+
+            $('#updInput').keyup(function() {
+                if ($('#updInput').val() == "") {
+                    $('#updBtn').prop('disabled',true);
+                } else {
+                    $('#updBtn').prop('disabled',false);
+                }
+            });
+
+            setClassifiedObjs();
+            setMaximum();
+            setCounter();
             updateQuery();
         </script>
     </body>

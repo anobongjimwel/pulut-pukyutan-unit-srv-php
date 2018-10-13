@@ -1,8 +1,7 @@
 <?php
 namespace pulut {
-
+    include_once 'Logger.php';
     use PDO;
-
     class TrashClassifier
     {
         const BIODEGRADABLE = 1;
@@ -10,7 +9,6 @@ namespace pulut {
         const UNSPECIFIED = 3;
         private $pdo;
         private $username, $password, $destination;
-
         public function __construct()
         {
             $this->username = 'root';

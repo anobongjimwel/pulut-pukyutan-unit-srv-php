@@ -30,7 +30,7 @@
             function fiveDayAverage($filePath) {
                 $average = 0;
                 $log = new \pulut\Logger();
-                for ($i=5; $i>=1; $i--) {
+                for ($i=4; $i>=0; $i--) {
                     $average+=$log->countLines($filePath."/log_".date("mdY",strtotime("-$i days")).".log");
                 }
                 return number_format($average/5,0);
@@ -39,7 +39,7 @@
             function lateFiveDayAverage($filePath) {
                 $average = 0;
                 $log = new \pulut\Logger();
-                for ($i=10; $i>=6; $i--) {
+                for ($i=9; $i>=4; $i--) {
                     $average+=$log->countLines($filePath."/log_".date("mdY",strtotime("-$i days")).".log");
                 }
                 return number_format($average/5,0);
