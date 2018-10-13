@@ -9,19 +9,21 @@
             $log = new \pulut\Logger();
             $trashMon = new \pulut\TrashMonitor();
             function compareProgress($firstArg, $secondArg) {
-                if ($firstArg == 0) {
+                if ($firstArg == 0 && $secondArg == 0) {
+                    $fctValue = number_format(0, 2);
+                } else if ($firstArg == 0) {
                     $fctValue = number_format($secondArg * 100, 2);
                 } else if ($secondArg == 0) {
                     $fctValue = number_format($firstArg * 100, 2);
                 } else {
                     $fctValue = number_format($firstArg / $secondArg * 100, 2);
                 }
-                if ($firstArg == $secondArg) {
-                    echo "<span style='color: blue; font-size: 15px'><i class='minus icon'></i>$fctValue</span>";
-                } else if ($firstArg > $secondArg) {
+                if ($firstArg > $secondArg) {
                     echo "<span style='color: red; font-size: 15px'><i class='arrow down icon'></i>$fctValue</span>";
                 } else if ($firstArg < $secondArg) {
                     echo "<span style='color: green; font-size: 15px'><i class='arrow up icon'></i>$fctValue</span>";
+                } else if ($firstArg == $secondArg) {
+                    echo "<span style='color: blue; font-size: 15px'><i class='minus icon'></i>$fctValue</span>";
                 }
             }
 
@@ -60,7 +62,7 @@
                         <div class="description">
                             <div class="ui equal width grid">
                                 <div class="column">
-                                    <font style="font-size: 20px"><?php echo $log->countLines("logs/log_".date("mdY").".log")?> </font><?php compareProgress($log->countLines("logs/log_".date("mdY",strtotime('-1 day')).".log"), $log->countLines("log/log_".date("mdY").".log")) ?><br />
+                                    <font style="font-size: 20px"><?php echo $log->countLines("logs/log_".date("mdY").".log")?> </font><?php compareProgress($log->countLines("logs/log_".date("mdY", strtotime('-1 days')).".log"), $log->countLines("logs/log_".date("mdY").".log")) ?><br />
                                     <font style="font-size: 14px">Overall Activity</font><br />
                                 </div>
                                 <div class="column">
@@ -79,7 +81,7 @@
                         <div class="description">
                             <div class="ui equal width grid">
                                 <div class="column">
-                                    <font style="font-size: 20px"><?php echo $log->countLines("logs/biodegradeable/log_".date("mdY").".log")?> </font><?php compareProgress($log->countLines("logs/biodegradeable/log_".date("mdY",strtotime('-1 day')).".log"), $log->countLines("log/biodegradeable/log_".date("mdY").".log")) ?><br />
+                                    <font style="font-size: 20px"><?php echo $log->countLines("logs/biodegradeable/log_".date("mdY").".log")?> </font><?php compareProgress($log->countLines("logs/biodegradeable/log_".date("mdY",strtotime('-1 days')).".log"), $log->countLines("logs/biodegradeable/log_".date("mdY").".log")) ?><br />
                                     <font style="font-size: 14px">Overall Activity</font><br />
                                 </div>
                                 <div class="column">
@@ -98,7 +100,7 @@
                         <div class="description">
                             <div class="ui equal width grid">
                                 <div class="column">
-                                    <font style="font-size: 20px"><?php echo $log->countLines("logs/biodegradeable/log_".date("mdY").".log")?> </font><?php compareProgress($log->countLines("logs/nonbiodegradeable/log_".date("mdY",strtotime('-1 day')).".log"), $log->countLines("log/nonbiodegradeable/log_".date("mdY").".log")) ?><br />
+                                    <font style="font-size: 20px"><?php echo $log->countLines("logs/biodegradeable/log_".date("mdY").".log")?> </font><?php compareProgress($log->countLines("logs/nonbiodegradeable/log_".date("mdY",strtotime('-1 day')).".log"), $log->countLines("logs/nonbiodegradeable/log_".date("mdY").".log")) ?><br />
                                     <font style="font-size: 14px">Overall Activity</font><br />
                                 </div>
                                 <div class="column">
@@ -117,7 +119,7 @@
                         <div class="description">
                             <div class="ui equal width grid">
                                 <div class="column">
-                                    <font style="font-size: 20px"><?php echo $log->countLines("logs/unspecified/log_".date("mdY").".log")?> </font><?php compareProgress($log->countLines("logs/unspecified/log_".date("mdY",strtotime('-1 day')).".log"), $log->countLines("log/unspecified/log_".date("mdY").".log")) ?><br />
+                                    <font style="font-size: 20px"><?php echo $log->countLines("logs/unspecified/log_".date("mdY").".log")?> </font><?php compareProgress($log->countLines("logs/unspecified/log_".date("mdY",strtotime('-1 day')).".log"), $log->countLines("logs/unspecified/log_".date("mdY").".log")) ?><br />
                                     <font style="font-size: 14px">Overall Activity</font><br />
                                 </div>
                                 <div class="column">
@@ -136,7 +138,7 @@
                         <div class="description">
                             <div class="ui equal width grid">
                                 <div class="column">
-                                    <font style="font-size: 20px"><?php echo $log->countLines("logs/messages/log_".date("mdY").".log")?> </font><?php compareProgress($log->countLines("logs/messages/log_".date("mdY",strtotime('-1 day')).".log"), $log->countLines("log/unspecified/log_".date("mdY").".log")) ?><br />
+                                    <font style="font-size: 20px"><?php echo $log->countLines("logs/messages/log_".date("mdY").".log")?> </font><?php compareProgress($log->countLines("logs/messages/log_".date("mdY",strtotime('-1 day')).".log"), $log->countLines("logs/messages/log_".date("mdY").".log")) ?><br />
                                     <font style="font-size: 14px">Overall Activity</font><br />
                                 </div>
                                 <div class="column">

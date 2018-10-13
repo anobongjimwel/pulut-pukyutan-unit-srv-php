@@ -27,7 +27,7 @@
                             <br /><br />
                             <font style="color: white; font-size: 16px;">Subscriber Code:</font><br />
                             <div class="ui fluid input">
-                                <input type="text" name="subscriberCode" placeholder="Subscriber Code" id="updInput" onkeyup="updateUpdBtn()">
+                                <input type="text" name="subscriberCode" placeholder="Subscriber Code" id="updInput">
                             </div>
                             <br />
                             <button type="button" class="ui blue button" onclick="window.open('https://developer.globelabs.com.ph/dialog/oauth/'+'<?php echo $messenger::APP_ID?>','_blank')">Get Code</button>

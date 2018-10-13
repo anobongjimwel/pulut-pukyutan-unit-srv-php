@@ -19,7 +19,7 @@
                 var objectName = document.getElementById('objectName-AdderWidget');
                 var objectType = document.getElementById('objectType-AdderWidget');
                 var XMLHttp = new XMLHttpRequest();
-                XMLHttp.open("POST","async/dbd_addWasteObj.php", true);
+                XMLHttp.open("POST","async/addWasteObj.php", true);
                 XMLHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
                 XMLHttp.send("objectName="+objectName.value+"&objectType="+objectType.value);
                 objectName.value = '';

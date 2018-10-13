@@ -7,7 +7,7 @@
         $_POST['referrer']=="nonbiodegradable" ||
         $_POST['referrer']=="unspecified")
     ) {
-        $deleteObject = $trashClsfr->deleteTrashClassification($_POST['wasteItem']);
+        $deleteObject = $trashClsfr->assignObject($_POST['wasteItem'], $trashClsfr::UNSPECIFIED);
         if ($deleteObject) {
            echo "GOOD";
         } else {

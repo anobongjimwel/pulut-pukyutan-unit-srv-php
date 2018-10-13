@@ -20,7 +20,7 @@ namespace pulut {
         }
 
         public function deleteTrashClassification($item) {
-            $executeDelete = $this->pdo->query("DELETE FROM wasteobjects WHERE objectName = '$item'");
+            $executeDelete = $this->pdo->query("DELETE FROM wasteObjects WHERE objectName = '$item'");
             if ($executeDelete) {
                 return true;
             } else {
@@ -69,15 +69,15 @@ namespace pulut {
         public function gatherObjectsByClassification($classification) {
             switch ($classification) {
                 case $this::BIODEGRADABLE:
-                    $itemsSearch = $this->pdo->query("SELECT * FROM wasteobjects WHERE objectType = 'biodegradable'");
+                    $itemsSearch = $this->pdo->query("SELECT * FROM wasteobjects WHERE objectType = 'biodegradable' LIMIT 10");
                     break;
 
                 case $this::NONBIODEGRADEABLE:
-                    $itemsSearch = $this->pdo->query("SELECT * FROM wasteobjects WHERE objectType = 'non-biodegradable'");
+                    $itemsSearch = $this->pdo->query("SELECT * FROM wasteobjects WHERE objectType = 'non-biodegradable' LIMIT 10");
                     break;
 
                 case $this::UNSPECIFIED:
-                    $itemsSearch = $this->pdo->query("SELECT * FROM wasteobjects WHERE objectType = 'unspecified'");
+                    $itemsSearch = $this->pdo->query("SELECT * FROM wasteobjects WHERE objectType = 'unspecified' LIMIT 10");
                     break;
             }
             if ($itemsSearch->rowCount()==0) {
@@ -87,12 +87,84 @@ namespace pulut {
             }
         }
 
+        public function countObjectsByClassification($classification) {
+            switch ($classification) {
+                case $this::BIODEGRADABLE:
+                    $itemsSearch = $this->pdo->query("SELECT * FROM wasteobjects WHERE objectType = 'biodegradable' LIMIT 10");
+                    break;
+
+                case $this::NONBIODEGRADEABLE:
+                    $itemsSearch = $this->pdo->query("SELECT * FROM wasteobjects WHERE objectType = 'non-biodegradable' LIMIT 10");
+                    break;
+
+                case $this::UNSPECIFIED:
+                    $itemsSearch = $this->pdo->query("SELECT * FROM wasteobjects WHERE objectType = 'unspecified' LIMIT 10");
+                    break;
+            }
+            if ($itemsSearch->rowCount()==0) {
+                return 0;
+            } else {
+                return $itemsSearch->rowCount();
+            }
+        }
+
         public function gatherObjectsByItem($item) {
-            $searchItem = $this->pdo->query("SELECT * FROM wasteobjects WHERE objectName = '$item'");
+            $searchItem = $this->pdo->query("SELECT * FROM wasteobjects WHERE objectName = '$item' LIMIT 10");
             if ($searchItem->rowCount()==0) {
                 return 0;
             } else {
                 return $searchItem->fetchAll(PDO::FETCH_ASSOC);
+            }
+        }
+
+        public function countObjectsByItem($item) {
+            $searchItem = $this->pdo->query("SELECT * FROM wasteobjects WHERE objectName = '$item' LIMIT 10");
+            if ($searchItem->rowCount()==0) {
+                return 0;
+            } else {
+                return $searchItem->rowCount();
+            }
+        }
+
+        public function gatherObjectsByItemInClassification($item, $classification) {
+            switch ($classification) {
+                case $this::BIODEGRADABLE:
+                    $itemsSearch = $this->pdo->query("SELECT * FROM wasteobjects WHERE objectType = 'biodegradable' AND objectName LIKE '%$item%' LIMIT 10");
+                    break;
+
+                case $this::NONBIODEGRADEABLE:
+                    $itemsSearch = $this->pdo->query("SELECT * FROM wasteobjects WHERE objectType = 'non-biodegradable' AND objectName LIKE '%$item%' LIMIT 10");
+                    break;
+
+                case $this::UNSPECIFIED:
+                    $itemsSearch = $this->pdo->query("SELECT * FROM wasteobjects WHERE objectType = 'unspecified' AND objectName LIKE '%$item%' LIMIT 10");
+                    break;
+            }
+            if ($itemsSearch->rowCount()==0) {
+                return 0;
+            } else {
+                return $itemsSearch->fetchAll(PDO::FETCH_ASSOC);
+            }
+        }
+
+        public function countObjectsByItemInClassification($item, $classification) {
+            switch ($classification) {
+                case $this::BIODEGRADABLE:
+                    $itemsSearch = $this->pdo->query("SELECT * FROM wasteobjects WHERE objectType = 'biodegradable' AND objectName LIKE '%$item%' LIMIT 10");
+                    break;
+
+                case $this::NONBIODEGRADEABLE:
+                    $itemsSearch = $this->pdo->query("SELECT * FROM wasteobjects WHERE objectType = 'non-biodegradable' AND objectName LIKE '%$item%' LIMIT 10");
+                    break;
+
+                case $this::UNSPECIFIED:
+                    $itemsSearch = $this->pdo->query("SELECT * FROM wasteobjects WHERE objectType = 'unspecified' AND objectName LIKE '%$item%' LIMIT 10");
+                    break;
+            }
+            if ($itemsSearch->rowCount()==0) {
+                return 0;
+            } else {
+                return $itemsSearch->rowCount();
             }
         }
     }
