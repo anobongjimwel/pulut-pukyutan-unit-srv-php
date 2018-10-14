@@ -71,6 +71,9 @@
                 XMLHttp.onreadystatechange = function () {
                     if (this.status == 200 && this.readyState == 4) {
                         if (this.responseText=="GOOD") {
+                            setMaximum();
+                            setCounter();
+                            setClassifiedObjs();
                             objectID
                                 .transition('scale')
                                 .queue(200)
@@ -90,6 +93,9 @@
                 XMLHttp.onreadystatechange = function () {
                     if (this.status == 200 && this.readyState == 4) {
                         if (this.responseText=="GOOD") {
+                            setMaximum();
+                            setCounter();
+                            setClassifiedObjs();
                             objectID
                                 .transition('fade')
                                 .queue(200)
@@ -97,6 +103,7 @@
                         } else {
                             alert('Cannot delete instance of "'+item+'" object! Try again.');
                         }
+
                     }
                 };
                 XMLHttp.open('POST','async/declassifyObject.php', true);

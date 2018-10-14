@@ -8,5 +8,6 @@ $path = array(
     "loadRotate2" => "resources/images/load-rotate2.gif",
     "loadNoRotate" => "resources/images/load-norotate.gif",
     "wasteBG" => "resources/images/e-waste-bg.jpg",
-    "wasteBGwhite" => "resources/images/e-waste-bg-white.jpg"
+    "wasteBGwhite" => "resources/images/e-waste-bg-white.jpg",
+    "defaultTrashImg" => "resources/images/defaultTrashIcon.jpg",
 );

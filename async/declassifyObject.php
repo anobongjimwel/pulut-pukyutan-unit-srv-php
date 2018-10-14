@@ -13,11 +13,18 @@
     ) {
         $deleteObject = $trashClsfr->assignObject($_POST['wasteItem'], $trashClsfr::UNSPECIFIED);
         if ($deleteObject) {
-            $msgr->sendMessage("Object '".$_POST['wasteItem']."' declassified from being a biodegradable");
-            $log->messageLogger("Object '".$_POST['wasteItem']."' declassified from being a biodegradable");
-            $log->genLogger("Object '".$_POST['wasteItem']."' declassified from being a biodegradable");
-            $log->unsLogger("Object '".$_POST['wasteItem']."' declassified from being a biodegradable");
-           echo "GOOD";
+            if ($_POST['referrer']=='biodegradable') {
+                $msgr->sendMessage("Object '" . $_POST['wasteItem'] . "' declassified from being a biodegradable");
+                $log->messageLogger("Object '" . $_POST['wasteItem'] . "' declassified from being a biodegradable");
+                $log->genLogger("Object '" . $_POST['wasteItem'] . "' declassified from being a biodegradable");
+                $log->unsLogger("Object '" . $_POST['wasteItem'] . "' declassified from being a biodegradable");
+            } else if ($_POST['referrer']=='nonbiodegradable') {
+                $msgr->sendMessage("Object '" . $_POST['wasteItem'] . "' declassified from being a non-biodegradable");
+                $log->messageLogger("Object '" . $_POST['wasteItem'] . "' declassified from being a non-biodegradable");
+                $log->genLogger("Object '" . $_POST['wasteItem'] . "' declassified from being a non-biodegradable");
+                $log->unsLogger("Object '" . $_POST['wasteItem'] . "' declassified from being a non-biodegradable");
+            }
+            echo "GOOD";
         } else {
             echo "BAD";
         }

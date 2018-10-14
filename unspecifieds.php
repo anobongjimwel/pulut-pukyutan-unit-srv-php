@@ -16,20 +16,9 @@
     <body>
         <?php include_once 'components/header.php' ?>
         <div class="fluid container">
-            <font style="color: white; font-size: 30px;">Non-Biodegradable Unit</font>
+            <font style="color: white; font-size: 30px;">Unspecified Unit</font>
             <div class="ui stackable grid">
                 <div class="four wide column">
-                    <br />
-                    <div style="border-radius: 10px; width: 100%; background-color: rgba(255, 255, 255, 0.2); padding: 10px;">
-                        <font style="color: white; font-size: 20px;">Add a Non-Biodegradable Object</font>
-                        <br /><br />
-                        <div class="ui fluid input">
-                            <input type="text" placeholder="Object Name" id="updInput">
-                        </div>
-                        <br />
-                        <button type="button" class="ui green  button" id="updBtn" disabled="disabled">Add</button>
-                        <button type="button" class="ui red button" id="resetBtn">Reset</button>
-                    </div>
                     <br />
                     <div style="border-radius: 10px; width: 100%; background-color: rgba(255, 255, 255, 0.2); padding: 10px;">
                         <font style="color: white; font-size: 20px;">Non-Biodegradable Unit Information</font>
@@ -57,8 +46,32 @@
                             <i class="search icon"></i>
                         </div>
                         <br /><br />
-                        <div style="overflow-y: scroll; max-height: 90%; height: 90%; background-color: rgba(0,0,0,0)" id="queryResults">
-
+                        <div style="max-height: 90%; height: 90%; background-color: rgba(0,0,0,0)" >
+                            <div class="ui cards" style="overflow-y: scroll;" id="queryResults">
+                                <div class="card">
+                                    <div class="image">
+                                        <img src="resources/images/defaultTrashIcon.jpg">
+                                    </div>
+                                    <div class="content">
+                                        <div class="header">
+                                            Elliot Fu
+                                        </div>
+                                        <div class="meta">
+                                            Friends of Veronika
+                                        </div>
+                                        <div class="description">
+                                            Elliot requested permission to view your contact details
+                                        </div>
+                                    </div>
+                                    <div class="extra content">
+                                        <div class="ui three buttons">
+                                            <div class="ui green button">Biodeg</div>
+                                            <div class="ui blue button">NonBio</div>
+                                            <div class="ui red button">Delete</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -91,7 +104,7 @@
                 XMLHttp.send("wasteItem="+item+"&referrer=nonbiodegradable");
             }
 
-            function declassifyObject(item, objectID) {
+            function classifyObject(item, objectID) {
                 var XMLHttp = new XMLHttpRequest();
                 XMLHttp.onreadystatechange = function () {
                     if (this.status == 200 && this.readyState == 4) {
@@ -121,9 +134,9 @@
                         $('#queryResults').html(this.response);
                     }
                 };
-                XMLHttp.open('POST','async/nnbdgblpg_helper.php', true);
+                XMLHttp.open('POST','async/unspg_helper.php', true);
                 XMLHttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-                XMLHttp.send('query='+$('#searchField').val()+'&referrer=nonbiodegradable');
+                XMLHttp.send('query='+$('#searchField').val()+'&referrer=unspecified');
             });
 
             function updateQuery() {
@@ -133,39 +146,10 @@
                         $('#queryResults').html(this.response);
                     }
                 };
-                XMLHttp.open('POST', 'async/nnbdgblpg_helper.php', true);
+                XMLHttp.open('POST', 'async/unspg_helper.php', true);
                 XMLHttp.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
-                XMLHttp.send('query=' + $('#searchField').val() + '&referrer=nonbiodegradable');
+                XMLHttp.send('query=' + $('#searchField').val() + '&referrer=unspecified');
             }
-
-            $('#updBtn').click(function() {
-                var XMLHttp = new XMLHttpRequest();
-                XMLHttp.onreadystatechange = function() {
-                    if (this.readyState == 4 && this.status == 200) {
-                        if (this.responseText=='1') {
-                            alert('Object "'+$('#updInput').val()+'" has been successfully added as a non-biodegradable object.');
-                            updateQuery();
-                        } else {
-                            alert('Object "'+$('#updInput').val()+'" failed to be added as non-biodegradable object.');
-                        }
-                        $('#updInput').val("");
-                        setClassifiedObjs();
-                        setMaximum();
-                        setCounter();
-                        updateQuery();
-                    }
-                };
-                XMLHttp.open('POST','async/addWasteObj.php');
-                XMLHttp.setRequestHeader('Content-type','application/x-www-form-urlencoded');
-                XMLHttp.send('objectName='+$('#updInput').val()+"&objectType=nonbiodegradable");
-
-            });
-
-            $('#resetBtn').click(function() {
-                $('#updInput').val('');
-                $('#updInput').focus();
-                $('#updBtn').prop('disabled',true);
-            });
 
             function setCounter() {
                 var XMLHttp = new XMLHttpRequest();
@@ -197,18 +181,9 @@
                 XMLHttp.send();
             }
 
-            $('#updInput').keyup(function() {
-                if ($('#updInput').val() == "") {
-                    $('#updBtn').prop('disabled',true);
-                } else {
-                    $('#updBtn').prop('disabled',false);
-                }
-            });
-
             setClassifiedObjs();
             setMaximum();
             setCounter();
-            updateQuery();
         </script>
     </body>
 </html>
