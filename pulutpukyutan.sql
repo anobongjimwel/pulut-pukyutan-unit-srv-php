@@ -1,13 +1,15 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.5.2
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 08, 2018 at 01:28 PM
--- Server version: 10.1.21-MariaDB
--- PHP Version: 5.6.30
+-- Generation Time: Oct 26, 2018 at 12:36 AM
+-- Server version: 10.1.36-MariaDB
+-- PHP Version: 7.2.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
+SET AUTOCOMMIT = 0;
+START TRANSACTION;
 SET time_zone = "+00:00";
 
 
@@ -36,18 +38,22 @@ CREATE TABLE `settings` (
 --
 
 INSERT INTO `settings` (`prefName`, `prefValue`) VALUES
-('biodegCount', '4'),
+('biodegCount', '0'),
 ('biodegMaxCount', '0'),
 ('bio_operational', '1'),
 ('fullname', 'Jimwel Anobong'),
-('nonbioCount', '1'),
+('msg_accessToken', 'CVbDBhFYq3uBPb4rK3T-pYYG8idbVOo_x6I7YGM6qDc'),
+('msg_append_items', '1'),
+('msg_service', '0'),
+('msg_subscriberNumber', '09357267168'),
+('nonbioCount', '0'),
 ('nonbioMaxCount', '0'),
 ('non_operational', '1'),
 ('password', '$2y$10$jOJdpTTTquchHXuIyOA6xOoHkFTrswGstMmBT0KCEoG25V31LyLn6'),
 ('schedules', '1, 2'),
 ('subtitle', 'Chief Operations Officer'),
-('unspecCount', '80'),
-('unspecMaxCount', '0'),
+('unspecCount', '123'),
+('unspecMaxCount', '123'),
 ('uns_operational', '1'),
 ('username', 'jtAnobong');
 
@@ -58,24 +64,20 @@ INSERT INTO `settings` (`prefName`, `prefValue`) VALUES
 --
 
 CREATE TABLE `wasteobjects` (
-  `objectName` varchar(250) DEFAULT NULL,
+  `objectName` varchar(250) NOT NULL,
   `objectType` char(17) DEFAULT NULL,
-  `dateAdded` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
-  `objectLink` varchar(500) DEFAULT NULL
+  `dateAdded` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `wasteobjects`
 --
 
-INSERT INTO `wasteobjects` (`objectName`, `objectType`, `dateAdded`, `objectLink`) VALUES
-('bottle', 'non-biodegradable', '2018-10-08 05:08:32', NULL),
-('bottle', 'non-biodegradable', '2018-10-08 05:09:48', NULL),
-('banana peel', 'biodegradable', '2018-10-08 05:10:21', NULL),
-('apple peel', 'biodegradable', '2018-10-08 05:13:25', NULL),
-('atis peel', 'biodegradable', '2018-10-08 05:13:41', NULL),
-('orange peel', 'biodegradable', '2018-10-08 05:13:50', NULL),
-('grape peel', 'non-biodegradable', '2018-10-08 05:24:11', NULL);
+INSERT INTO `wasteobjects` (`objectName`, `objectType`, `dateAdded`) VALUES
+('1231231331', 'unspecified', '2018-10-14 00:41:43'),
+('Test 12312321321', 'unspecified', '2018-10-14 00:40:53'),
+('Test Object', 'unspecified', '2018-10-14 00:30:04'),
+('Test object 1231231231231313', 'unspecified', '2018-10-14 00:46:51');
 
 --
 -- Indexes for dumped tables
@@ -86,6 +88,13 @@ INSERT INTO `wasteobjects` (`objectName`, `objectType`, `dateAdded`, `objectLink
 --
 ALTER TABLE `settings`
   ADD PRIMARY KEY (`prefName`);
+
+--
+-- Indexes for table `wasteobjects`
+--
+ALTER TABLE `wasteobjects`
+  ADD PRIMARY KEY (`objectName`);
+COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
